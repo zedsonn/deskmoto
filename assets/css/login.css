@@ -4,14 +4,18 @@
   
   body {
     background: url('../img/login.jpg') no-repeat;
-    height: 100vh;
     background-size:cover;
+    height: 100vh;
     font-family: "Raleway", sans-serif;
   }
 
   .nav-bar{
     background: rgba(43, 42, 42, 0.871);
-    width: 100%;
+    max-width: 100%;
+  }
+
+  .box-logo{
+    margin: 1% 0;
   }
 
   .logo{
@@ -28,6 +32,17 @@
   .slogan{
     color:white;
   }
+
+
+
+
+
+
+
+
+
+
+  /* CODEPEN */
 
   
   form#login-form {
