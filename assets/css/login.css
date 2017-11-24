@@ -1,16 +1,15 @@
-[class*="fontawesome-"]:before {
-    font-family: "FontAwesome", sans-serif;
-  }
-  
+html{
+}
   body {
     background: url('../img/login.jpg') no-repeat;
     background-size:cover;
-    height: 100vh;
-    font-family: "Raleway", sans-serif;
+    height: 100%;
+    margin: auto;
+  
   }
 
   .nav-bar{
-    background: rgba(43, 42, 42, 0.871);
+    background: rgba(43, 42, 42, 0.671);
     max-width: 100%;
   }
 
@@ -19,25 +18,60 @@
   }
 
   .logo{
-    width:80px;
-    height:80px;
+    width:130px;
+    height:130px;
     margin: 0 auto;
+  }
+
+  .box-slogan{
+    margin: auto 0;
   }
 
   .title{
     color: #FF0;
-    font-size: 2em;
   }
 
   .slogan{
     color:white;
   }
 
+  .box-social{
+    margin: 1% 0;
+  }
+
+  .social{
+    font-size:2em;
+    color: #FF0; 
+    margin: 2px 0;
+  }
+
+
+  .social:hover{
+    color: #FA0;
+  }
 
 
 
+  @media only screen and (max-width: 580px) {
+    .box-container{
+      display: flex !important;
+      justify-content: space-around !important;
+      align-items: center !important;
+    }
 
+    .box-slogan{
+      display: flex !important;
+      justify-content: space-around !important;
+      align-items: center !important;
 
+    }
+
+    .box-social{
+      width: 100% !important;
+      display: flex !important;
+      justify-content: space-around !important
+    }
+  }
 
 
 
@@ -221,25 +255,6 @@
     box-sizing: border-box;
   }
   
-  html, body {
-    height: 100%;
-  }
-  
-  body {
-    font: 11px "Open Sans", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  
   ul {
     list-style: none;
   }
@@ -347,13 +362,8 @@
     padding: 0px 20px;
   }
   
-  .footer-social-overlap > a {
-    font-size: 3em;
-  }
-  
-  .footer-social-overlap > a:not(:first-child) {
-    margin-left: 0.38em;
-  }
+
+
   
   .footer-bottom-section {
     width: 100%;
@@ -376,27 +386,7 @@
     font-style: normal;
   }
   
-  @media only screen and (max-width: 768px) {
-    .footer-list-header {
-      font-size: 2em;
-    }
   
-    .footer-list-anchor {
-      font-size: 1.1em;
-    }
-  
-    .footer-social-connect {
-      font-size: 2.5em;
-    }
-  
-    .footer-social-overlap > a {
-      font-size: 2.24em;
-    }
-  
-    .footer-bottom-wrapper {
-      font-size: 1.3em;
-    }
-  }
   @media only screen and (max-width: 568px) {
     main {
       font-size: 5em;
@@ -429,22 +419,11 @@
       padding: 0 10px;
     }
   
-    .footer-social-overlap {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-    }
+
   
     .footer-social-icons-wrapper {
       width: 100%;
       padding: 0;
-    }
-  
-    .footer-social-overlap > a:not(:first-child) {
-      margin-left: 20px;
     }
   
     .footer-bottom-section {
@@ -455,40 +434,6 @@
       text-align: center;
       width: 100%;
       margin-top: 10px;
-    }
-  }
-  @media only screen and (max-width: 480px) {
-    .footer-social-overlap > a {
-      margin: auto;
-    }
-  
-    .footer-social-overlap > a:not(:first-child) {
-      margin-left: 0;
-    }
-  
-    .footer-bottom-rights {
-      display: block;
-    }
-  }
-  @media only screen and (max-width: 320px) {
-    .footer-list-header {
-      font-size: 2.2em;
-    }
-  
-    .footer-list-anchor {
-      font-size: 1.2em;
-    }
-  
-    .footer-social-connect {
-      font-size: 2.4em;
-    }
-  
-    .footer-social-overlap > a {
-      font-size: 2.24em;
-    }
-  
-    .footer-bottom-wrapper {
-      font-size: 1.3em;
     }
   }
   
