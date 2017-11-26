@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>DeskMotor</title>
-        <meta name="viewport" content="width=500, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet"href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/bootstrap4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/login.css">
@@ -12,52 +12,77 @@
     <body>
         <!--Logo / Social Media -->
         <nav class="nav-bar">
-            <div class="container d-flex justify-content-md-between justify-content-center">
-                <div class="d-flex align-items-center flex-column ">
-                    <img class="logo " src="assets/img/logo.svg">
-                    <div class="d-flex flex-column box-slogan align-items-center">
-                        <span class="title ">DeskMotor</span>
-                        <span class="slogan">O controle do Motoboy</span>
-                    </div>
+
+          <!-- Social -->
+          <section class="box-social d-flex justify-content-end">
+
+            <a href="https://www.facebook.com/wendel.sagrilo" class="social" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+            
+            <a href="https://twitter.com/" class="social" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+            
+            <a href="https://www.youtube.com/watch?v=lA2dfejGwl4" class="social" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+
+            <a href="fale-conosco.html" class="social" target="_blank" title="Fala Comigo" itemprop="significantLink"><i class="fa fa-bullhorn" aria-hidden="true"></i></a>
+
+          </section> 
+
+
+           <!-- LOGO -->
+
+            <div class="container d-flex justify-content-around justify-content-center flex-column flex-md-row box-container ">
+                <div class="box-logo d-flex flex-column align-items-center jusfity-content-center ">
+                    <img class="logo " src="assets/img/logo.png">
+                    <h5 class="slogan ">Gerenciador para Motoboys</h5>
+                    
                 </div>
 
-                <span class="d-flex align-items-center footer-social-overlap hidden-sm-down ">
-                    <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
-                    
-                    <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
-                    
-                    <a href="fale-conosco.html" class="generic-anchor" target="_blank" title="Fala Comigo" itemprop="significantLink"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                    
-                    <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
-                </span>
+                
+                
             </div>
         </nav>
 
+        
         <!--Form login -->
-        <form action="#" id="login-form">
-            <div class="heading">Login </div>
-            <div class="left">
-              <label for="email">Email</label> <br />
-              <input type="email" name="email" id="email" /> <br />
-              <label for="password">Password</label> <br />
-              <input type="password" name="password" id="pass" /> <br />
-              <input type="submit" value="Login" />
-            </div>
-            <div class="right">
-              <div class="connect">Connect with</div>
-              <a href="" class="facebook">
-                <span class="fontawesome-facebook"></span>
-              </a> <br />
-              <a href="" class="twitter">
-                <span class="fontawesome-twitter"></span>
-              </a> <br />
-              <a href="" class="google-plus">
-                <span class="fontawesome-google-plus"></span>
-              </a>
-            </div>
-          </form>  
+        <div class="container">
+          <form action="#" id="login-form">
+              <div class="heading">
+                LOGIN 
+              </div>
+
+              <div class="login row col-6 d-flex flex-column justify-content-around ">
+                <div class="box-input row d-flex flex-column align-items-center">
+                  <label for="email">EMAIL</label> 
+                  <input type="email col-12" name="email" id="email"/> 
+                </div>
+
+                <div class="box-input d-flex flex-column align-items-center">
+                  <label for="password">SENHA</label> 
+                  <input type="password col-12" name="password" id="pass" />
+                </div>
+
+                <div class="box-btn d-flex justify-content-around">
+                  <button type="#" class="col-6 btn btn-login " >Entrar</button>
+                </div>
+              </div>
+
+<!--
+              <div class="social-login row col-6 d-flex flex-column justify-content-around">
+                <div class="connect">Connect with</div>
+                <a href="" class="facebook">
+                  <span class="fontawesome-facebook"></span>
+                </a> 
+                <a href="" class="twitter">
+                  <span class="fontawesome-twitter"></span>
+                </a> 
+                <a href="" class="google-plus">
+                  <span class="fontawesome-google-plus"></span>
+                </a>
+              </div> -->
+            </form>  
+        </div>
 
         <!--Footer -->
+
         <footer class="flex-rw">
           <ul class="footer-list-top">
             <li>
@@ -68,7 +93,7 @@
 
           <ul class="footer-list-top">
                 <li>
-                  <h4 class="footer-list-header">Desenvolvimento</h4></li>
+                  <h4 class="footer-list-header">Dev</h4></li>
                 <li><a href='about.html' target="blank" class="generic-anchor footer-list-anchor" itemprop="significantLink">Como funciona?</a></li>
               </ul>
 
@@ -83,6 +108,7 @@
               </div>
           </section>
         </footer>
+
 
         <script src="assets/js/jquery-3.2.1.min.js"></script>
         <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
