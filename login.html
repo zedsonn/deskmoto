@@ -10,20 +10,32 @@
     </head>    
 
     <body>
+
+      <!-- Login com Facebook -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.11&appId=1010107379085395';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+
         <!--Logo / Social Media -->
         <nav class="nav-bar">
 
           <!-- Social -->
-          <section class="box-social d-flex justify-content-end">
+          <section class="box-social">
+            <div class="container d-flex justify-content-end">
+              <a href="https://www.facebook.com/wendel.sagrilo" class="social" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+              
+              <a href="https://twitter.com/" class="social" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+              
+              <a href="https://www.youtube.com/watch?v=lA2dfejGwl4" class="social" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
 
-            <a href="https://www.facebook.com/wendel.sagrilo" class="social" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
-            
-            <a href="https://twitter.com/" class="social" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
-            
-            <a href="https://www.youtube.com/watch?v=lA2dfejGwl4" class="social" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
-
-            <a href="fale-conosco.html" class="social" target="_blank" title="Fala Comigo" itemprop="significantLink"><i class="fa fa-bullhorn" aria-hidden="true"></i></a>
-
+              <a href="fale-conosco.html" class="social" target="_blank" title="Fala Comigo" itemprop="significantLink"><i class="fa fa-bullhorn" aria-hidden="true"></i></a>
+            </div>
           </section> 
 
 
@@ -33,7 +45,6 @@
                 <div class="box-logo d-flex flex-column align-items-center jusfity-content-center ">
                     <img class="logo " src="assets/img/logo.png">
                     <h5 class="slogan ">Gerenciador para Motoboys</h5>
-                    
                 </div>
 
                 
@@ -43,43 +54,96 @@
 
         
         <!--Form login -->
-        <div class="container">
-          <form action="#" id="login-form">
+        <div class="container ">
+          <form action="#" class="login-form" novalidate>
+            <div id="formLogin">
               <div class="heading">
-                LOGIN 
+                <h5 id="headingForm">Informe seus dados de acesso.</h5>
               </div>
 
-              <div class="login row col-6 d-flex flex-column justify-content-around ">
-                <div class="box-input row d-flex flex-column align-items-center">
-                  <label for="email">EMAIL</label> 
-                  <input type="email col-12" name="email" id="email"/> 
-                </div>
+              <!-- Login Usuário -->
+              <section class="container d-flex flex-column justify-content-around align-items-center">
+                  
+                  <div class="box-input d-flex flex-column align-items-center">
+                    <label id="labelLogin"for="email">EMAIL</label> 
+                    <input type="email" name="email" class="col-md-5" id="email"/> 
+                    <div id="bar-input-login" class="col-md-5 d-flex justify-content-start">
+                      <span id="barEmail"></span>  
+                    </div> 
+                  </div>
 
-                <div class="box-input d-flex flex-column align-items-center">
-                  <label for="password">SENHA</label> 
-                  <input type="password col-12" name="password" id="pass" />
-                </div>
+                  <div class="box-input d-flex flex-column align-items-center">
+                    <label id="labelPass" for="password">SENHA</label> 
+                    <input type="password" class="col-md-5 " name="password" id="pass" />
+                    <div id="bar-input-login" class="col-md-5 d-flex justify-content-start">
+                        <span id="barPass"></span>  
+                      </div>  
+                  </div>
 
-                <div class="box-btn d-flex justify-content-around">
-                  <button type="#" class="col-6 btn btn-login " >Entrar</button>
-                </div>
-              </div>
-
-<!--
-              <div class="social-login row col-6 d-flex flex-column justify-content-around">
-                <div class="connect">Connect with</div>
-                <a href="" class="facebook">
-                  <span class="fontawesome-facebook"></span>
-                </a> 
-                <a href="" class="twitter">
-                  <span class="fontawesome-twitter"></span>
-                </a> 
-                <a href="" class="google-plus">
-                  <span class="fontawesome-google-plus"></span>
-                </a>
-              </div> -->
-            </form>  
+                  <div class="box-btn d-flex flex-justify-content-center col-6 align-items-center flex-column">
+                    <button type="submit" class="col-md-8 btn btn-login " >Entrar</button>
+                    <button id="cadastro" type=""  class="col-md-8 btn btn-login " >Cadastre-se!</button>
+                  </div>
+        
+              </section>
+            
+            <!-- Login Social Media -->
+            <section class="social-login d-flex justify-content-center align-items-center">
+              <div class="box-social-login container ">
+                
+                <div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>    
+                
+              </div>    
+            </section>
+          </div>
+          </form>  
         </div>
+
+        <!-- Form Cadastro -->
+
+
+        <div class="container">
+            <form action="#" class="login-form box-form-register">
+              <div id="formRegister">
+                  
+                <div class="heading">
+                  <h5 id="headingForm">Informe seus dados de acesso.</h5>
+                </div>
+    
+                  
+                <section class="container d-flex flex-column justify-content-around align-items-center">
+                    
+                    <div class="box-input d-flex flex-column align-items-center">
+                      <label id="labelLogin"for="email">EMAIL</label> 
+                      <input type="email" name="email" class="col-md-5 input-form" id="email"/>
+                      <div class="bar-input"></div> 
+                    </div>
+    
+                    <div class="box-input d-flex flex-column align-items-center">
+                      <label id="labelPass " for="password">SENHA</label> 
+                      <input type="password" class="col-md-5 input-form " name="password" id="pass" />
+                      <div class="bar-input">oi</div>
+                    </div>
+    
+                    <div class="box-btn d-flex flex-justify-content-center col-6 align-items-center flex-column">
+                      <button type="submit" class="col-md-8 btn btn-login " >Entrar</button>
+                      <button id="cadastro" type=""  class="col-md-8 btn btn-login " >Cadastre-se!</button>
+                    </div>
+                </section>
+              </div>
+                            <section class="social-login">
+                <div class="container d-flex justify-content-center">
+                  <span class="d-flex  ">Acesse com: </span>
+                  
+                  <div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>    
+                  
+                </div>    
+              </section>
+              
+            </form>  
+          </div>
+   
+
 
         <!--Footer -->
 
