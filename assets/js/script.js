@@ -1,4 +1,5 @@
 $(function(){
+
     //Efeito input Email Login label / Border
     $("#email").on('focus', function(){
         $("#labelLogin").css({
@@ -93,33 +94,6 @@ $(function(){
 
 
 
-
-
-    //Cadastro
-
-    $("#cadastro").on("click", function(e){
-        e.preventDefault();
-        $("#formLogin").animate({
-            opacity: 0,
-        }, 200);
-
-        setTimeout(function(){
-            $("#formLogin").css({
-                display: 'none',
-            });
-        },200);
-
-
-        $(".box-form-register").css({
-            display: 'block',
-        });
-
-        $(".box-form-register").animate({
-            opacity: 1,
-        }, 250);    
-    });
-
-
 //Form Cadastro
 
 //Efeito input Email Register label / Border
@@ -143,6 +117,8 @@ $("#emailRegister").on('focus', function(){
         width: '100%',
         borderRadius: "3px",
     },200);
+
+
   
 });
 
@@ -312,9 +288,49 @@ $("#passConfirmRegister").on('focusout', function(){
     },200);
 });
 
-//Voltar Menu Login
+    //Transição de Formulário para Cadastro/Login
 
-//Cadastro
+    //Login para Cadastro
+
+    $("#btnCadastro").on("click", function(e){
+        e.preventDefault();
+        console.log("oi");
+        $("#formLogin").animate({
+            opacity: 0,
+        }, 200);
+
+        $(".box-form-register").css({
+            display: 'block',
+        });
+
+
+        $(".box-form-register").animate({
+        opacity: 1,
+        }, 250);  
+
+        setTimeout(function(){
+            $("#formLogin").css({
+                display: 'none',
+            });  
+    
+          
+            //Posicionamento automatico da Tela
+            var position = 0;
+            var scrollForm = setInterval(function(){
+                position = position + 10;
+                window.scrollTo(0, position);
+
+                if(position > 430){
+                    clearInterval(scrollForm);
+                }
+            },10);
+            
+
+        },200);
+        
+    });
+
+    //Cadastro para Login
 
 $("#telaLogin").on("click", function(e){
     e.preventDefault();
@@ -326,6 +342,21 @@ $("#telaLogin").on("click", function(e){
         $(".box-form-register").css({
             display: 'none',
         });
+
+        //Posicionamento automatico da Tela
+        var position = 0;
+        var scrollForm = setInterval(function(){
+            position = position + 10;
+            console.log(position);
+            window.scrollTo(0, position);
+
+            if(position > 430){
+                console.log(position);
+                clearInterval(scrollForm);
+            }
+        },10);
+
+
     },200);
 
 
@@ -337,6 +368,8 @@ $("#telaLogin").on("click", function(e){
         opacity: 1,
     }, 250);    
 });
+
+
 
 });
     
