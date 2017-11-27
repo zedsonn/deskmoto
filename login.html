@@ -55,8 +55,8 @@
         
         <!--Form login -->
         <div class="container ">
-          <form action="#" class="login-form" novalidate>
-            <div id="formLogin">
+          <form action="#" id="formLogin" class="login-form" novalidate>
+            <div >
               <div class="heading">
                 <h5 id="headingForm">Informe seus dados de acesso.</h5>
               </div>
@@ -67,7 +67,7 @@
                   <div class="box-input d-flex flex-column align-items-center">
                     <label id="labelLogin"for="email">EMAIL</label> 
                     <input type="email" name="email" class="col-md-5" id="email"/> 
-                    <div id="bar-input-login" class="col-md-5 d-flex justify-content-start">
+                    <div class="bar-input-login col-md-5 d-flex justify-content-start">
                       <span id="barEmail"></span>  
                     </div> 
                   </div>
@@ -75,14 +75,14 @@
                   <div class="box-input d-flex flex-column align-items-center">
                     <label id="labelPass" for="password">SENHA</label> 
                     <input type="password" class="col-md-5 " name="password" id="pass" />
-                    <div id="bar-input-login" class="col-md-5 d-flex justify-content-start">
+                    <div class="bar-input-login col-md-5 d-flex justify-content-start">
                         <span id="barPass"></span>  
                       </div>  
                   </div>
 
                   <div class="box-btn d-flex flex-justify-content-center col-6 align-items-center flex-column">
                     <button type="submit" class="col-md-8 btn btn-login " >Entrar</button>
-                    <button id="cadastro" type=""  class="col-md-8 btn btn-login " >Cadastre-se!</button>
+                    <button id="cadastro" type=""  class="col-md-8 btn btn-login " >Cadastro!</button>
                   </div>
         
               </section>
@@ -99,50 +99,73 @@
           </form>  
         </div>
 
-        <!-- Form Cadastro -->
 
 
-        <div class="container">
-            <form action="#" class="login-form box-form-register">
-              <div id="formRegister">
-                  
-                <div class="heading">
-                  <h5 id="headingForm">Informe seus dados de acesso.</h5>
-                </div>
-    
-                  
-                <section class="container d-flex flex-column justify-content-around align-items-center">
+        <!-- FORM CADASTRO -->
+        
+        <div class="container ">
+            <form action="#" class="login-form box-form-register" id="boxRegister" novalidate>
+              <div id="formLogin">
+                <div class="headingRegister">
+                  <h5 id="headingForm" class="d-flex flex-column justify-content-center">Bem vindo (a), Cadastre-se no DeskMotor e facilite sua vida!
+                    <span class="sub-title">Favor, preencher os campos abaixo para efetuar o cadastro.</span>
+                      
+                  </h5>
+                 </div>
+  
+                <!-- CADASTRO USUARIO -->
+                <section class="container d-flex flex-column align-items-center">
                     
-                    <div class="box-input d-flex flex-column align-items-center">
-                      <label id="labelLogin"for="email">EMAIL</label> 
-                      <input type="email" name="email" class="col-md-5 input-form" id="email"/>
-                      <div class="bar-input"></div> 
+                    <div class="box-inputRegister d-flex flex-column align-items-center">
+                      <label id="labelEmailRegister"for="emailRegister">Email</label> 
+                      <input type="email" name="emailRegister" class="col-md-5" id="emailRegister"/> 
+                      <div class="bar-input-login col-md-5 d-flex justify-content-start">
+                        <span id="barEmailRegister"></span>  
+                      </div> 
                     </div>
-    
-                    <div class="box-input d-flex flex-column align-items-center">
-                      <label id="labelPass " for="password">SENHA</label> 
-                      <input type="password" class="col-md-5 input-form " name="password" id="pass" />
-                      <div class="bar-input">oi</div>
+
+                    <div class="box-inputRegister d-flex flex-column align-items-center">
+                        <label id="labelEmailConfirmRegister"for="emailConfirmRegister">Confirmar Email</label> 
+                        <input type="email" name="emailConfirmRegister" class="col-md-5" id="emailConfirmRegister"/> 
+                        <div class="bar-input-login col-md-5 d-flex justify-content-start">
+                          <span id="barEmailConfirmRegister"></span>  
+                        </div> 
+                      </div>
+  
+                    <div class="box-inputRegister d-flex flex-column align-items-center">
+                      <label id="labelPassRegister" for="passRegister">Senha</label> 
+                      <input type="password" class="col-md-5 " name="passRegister" id="passRegister" />
+                      <div class="bar-input-login col-md-5 d-flex justify-content-start">
+                          <span id="barPassRegister"></span>  
+                        </div>  
                     </div>
-    
+
+                    <div class="box-inputRegister d-flex flex-column align-items-center">
+                        <label id="labelPassConfirmRegister" for="passConfirmRegister">Confirmar Senha</label> 
+                        <input type="password" class="col-md-5 " name="passConfirmRegister" id="passConfirmRegister" />
+                        <div class="bar-input-login col-md-5 d-flex justify-content-start">
+                            <span id="barPassConfirmRegister"></span>  
+                          </div>  
+                      </div>
+  
                     <div class="box-btn d-flex flex-justify-content-center col-6 align-items-center flex-column">
-                      <button type="submit" class="col-md-8 btn btn-login " >Entrar</button>
-                      <button id="cadastro" type=""  class="col-md-8 btn btn-login " >Cadastre-se!</button>
+                      <button type="submit" class="col-md-8 btn btn-login " >Cadastrar</button>
+                      <button id="telaLogin" type=""  class="col-md-8 btn btn-login" >Login</button>
                     </div>
+          
                 </section>
-              </div>
-                            <section class="social-login">
-                <div class="container d-flex justify-content-center">
-                  <span class="d-flex  ">Acesse com: </span>
+              
+              <!-- Login Social Media -->
+              <section class="social-login-register d-flex justify-content-center align-items-center">
+                <div class="box-social-login-register container ">
                   
                   <div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>    
                   
                 </div>    
               </section>
-              
+            </div>
             </form>  
           </div>
-   
 
 
         <!--Footer -->
