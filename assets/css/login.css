@@ -63,7 +63,7 @@ body {
 
 
 /*FORMULARIO LOGIN */
-.login-form {
+.login-form:nth-child(1) {
   background: rgba(255,255,255,0.5);
   margin: 7em auto;
   overflow: hidden;
@@ -74,18 +74,7 @@ body {
   box-shadow: 2px 2px 0 black;
 }
 
-.login-form:nth-child(2) {
-  background: rgba(red);
-  margin: 7em auto;
-  overflow: hidden;
-  position: relative;
-  -moz-border-radius: 0.3em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 2px 2px 0 black;
-}
-
-form.login-form div h5 {
+.heading {
   background: rgba(43, 42, 42, 0.871);
   color: white;
   text-align: center;
@@ -107,6 +96,7 @@ form.login-form div h5 {
 }
 .box-input > label{
   color: rgba(43, 42, 42, 0.871);
+  cursor: text;
   position: absolute;
 }
 .box-input > input{
@@ -115,7 +105,7 @@ form.login-form div h5 {
   background: rgba(255,255,255,0.4);
 }
 
-#bar-input-login{
+.bar-input-login{
   padding: 0 2px !important;
 }
 
@@ -177,12 +167,56 @@ form.login-form div h5 {
   width: 220px;
 }
 
-.box-form-register{
-  display: none;
-  position: absolute;
-  background: green;
 
+.headingRegister{
+  background: rgba(255, 170, 0, 0.795);
+  color: black;
+  text-align: center;
+  padding: 1.5em;
 }
+
+.box-form-register{
+  position: relative;
+  margin: 7em auto; 
+  background: rgba(43, 42, 42, 0.671) !important;
+  margin: auto;
+  display: none;
+  opacity: 0;
+}
+
+.box-inputRegister{
+  width: 100%;
+  padding: 2em 2em;
+}
+
+.box-inputRegister > input{
+  border-radius: 5px;
+  background: none;
+  text-align: center;
+  outline: none;
+  border: none;
+  color: white;
+  background: rgba(255,255,255,0.4) !important;
+}
+.box-inputRegister > label{
+  color: black;
+  z-index: 2;
+  cursor: text;
+  position: absolute;
+}
+
+.social-login-register{
+  background: rgba(255, 170, 0, 0.795);
+  width:100%;
+  height: 45px;
+  font-family: industrail;
+}
+
+.box-social-login-register{
+  height: 30px;
+  width: 220px;
+}
+
 
 
 
@@ -195,8 +229,9 @@ form.login-form div h5 {
 @media only screen and (max-width: 370px) {
   
 .btn-login:nth-child(2){
-  background-color: red;
-  text-align: start !important;
+  font-size: .4em;
+  text-transform: uppercase;
+
 }
 
 .btn-login:nth-child(2):hover{
