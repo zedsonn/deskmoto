@@ -21,7 +21,7 @@
   }
   .box-title-modal{
     border-bottom: 1px solid rgba(255,255,255,0.5);
-    height: 100%;
+    min-height: fit-content !important;
     width: 100%;
     background: black;
     background-color: black;
@@ -31,6 +31,28 @@
     text-align: center;
     color: #FF0;
     height: 100%;
+    margin: 14px 0;
+  }
+
+  .btn-x-modal{
+    width: 21px;
+    height: 22px;
+    background-color: rgb(160, 0, 0) !important;
+    border-radius: 20px;
+    position: absolute !important;
+    align-self: center;
+    right: 0;
+    margin: 14px;
+    cursor: pointer;
+  }
+  .btn-x-modal:hover{
+    background-color: rgb(255, 0, 0) !important;
+    border-radius: 20px;
+    position: absolute !important;
+    align-self: center;
+    right: 0;
+    margin: 14px;
+    
   }
 
   .box-body-modal{

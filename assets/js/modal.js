@@ -19,7 +19,7 @@ $(function(){
         },700);
     });
 
-    $(".closeModal").on('click', function(){
+    $(".closeModal, #btnXModal").on('click', function(){
         $("#modalGuiaRapido").animate({
             height: '0',
             width: '0',
@@ -50,7 +50,7 @@ $(function(){
         },700);
     });
 
-    $(".closeModal").on('click', function(){
+    $(".closeModal, #btnXModal").on('click', function(){
         $("#modalGuiaCompleto").animate({
             height: '0',
             width: '0',
@@ -62,6 +62,88 @@ $(function(){
             })
         }, 680);
     });
+
+
+    //Modal Termos de Registro e Privacidade
+    $(".setModalPolicy").on("click", function(){
+        
+        //Modal Termos de Registro
+
+        if(this.id == 'termRegisterModal' || (this).id == 'termModal'){
+            $("#termsRegisterModal").css({
+                zIndex: '3500',
+                opacity: '1',
+            });
+            $("#termsRegisterModal").animate({
+                height: '65vh',
+                width: '75%',
+    
+            },700);
+    
+        $(".closeModal , #btnXModal").on('click', function(){
+            $("#termsRegisterModal").animate({
+                height: '0',
+                width: '0',
+            },700);
+            setTimeout(function(){
+                $("#termsRegisterModal").css({
+                    opacity: '0',
+                    zIndex: '-100',
+                })
+            }, 680);
+        });
+    } else if(this.id == 'policyModal' || this.id == 'policyRegisterModal'){
+        $("#policyRegisterModal").css({
+            zIndex: '3500',
+            opacity: '1',
+        });
+        $("#policyRegisterModal").animate({
+            height: '65vh',
+            width: '75%',
+
+        },700);
+
+    $(".closeModal, #btnXModal").on('click', function(){
+        $("#policyRegisterModal").animate({
+            height: '0',
+            width: '0',
+        },700);
+        setTimeout(function(){
+            $("#policyRegisterModal").css({
+                opacity: '0',
+                zIndex: '-100',
+            })
+        }, 680);
+    });
+}
+    
+     //Modal de Politica de Privacidade
+     $("#policyRegister").on("click", function(){
+        $("#policyRegisterModal").css({
+            zIndex: '3500',
+            opacity: '1',
+        });
+        $("#policyRegisterModal").animate({
+            height: '65vh',
+            width: '75%',
+
+        },700);
+    });
+
+    $(".closeModal , #btnXModal").on('click', function(){
+        $("#policyRegisterModal").animate({
+            height: '0',
+            width: '0',
+        },700);
+        setTimeout(function(){
+            $("#policyRegisterModal").css({
+                opacity: '0',
+                zIndex: '-100',
+            })
+        }, 680);
+
+    });
+});
 
 
 });
