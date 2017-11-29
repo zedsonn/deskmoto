@@ -205,6 +205,15 @@ body {
   position: absolute;
 }
 
+.form-check-input {
+  margin-top: 0.35rem !important;
+}
+
+.form-check label{
+  font-size: .8em;
+  color: rgba(255,255,255,0.5);
+}
+
 .social-login-register{
   background: rgba(255, 170, 0, 0.795);
   width:100%;
@@ -226,29 +235,50 @@ body {
   height: 100%;
 }
 
-.info-section > ul li{
+.box-footer-center{
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.info-section > ul{
+  margin: 20px 0;
   list-style: none;
-  text-align: center;
+}
+
+
+.footer-list-header{
   color: #FA0;
-  cursor: pointer;
+  text-align: center;
 }
 
-.info-section ul li h4{
-  color: white;
+.link-footer{
+  cursor: pointer;
+  color: white !important;
+  
+}
+
+.link-footer:hover{
+  border-bottom: 2px solid black;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 
-.info-section > ul li:hover{
-  text-decoration: underline;
-  cursor: pointer;
-}
+
+
 
 .footer-line{
   height: 1px;
   width: 100%;
   margin: 5px 0;
   background-color: rgba(255,255,255,0.4);
+}
+
+
+
+
+.copyright{
+  color: white;
 }
 
 
@@ -320,6 +350,15 @@ body {
   .footer-bottom{
     text-align: center;
   }
+
+
+.box-footer-center{
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: none;
+  border-right: none;
+  padding: 20px;
+}
 
 }
 
