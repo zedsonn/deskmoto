@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <title>DeskMotor</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <link rel="stylesheet"href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/loading.css">
+      <link rel="stylesheet" href="assets/bootstrap4.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/modal.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+  </head>    
+
+  <body>
+    <!-- LOADING PAGE -->
+    <div id="loading" class="loading-page d-flex justify-content-around align-items-center">
+        <img class="loading-img" src="assets/img/loading.png">
+        <img class="loading-point" id="pointer" src="assets/img/ponteiro-loading.png">  
+    </div>
+
+        <!-- /// MODAL /// -->
+
+        <!-- Modal Manual Prático -->
+    <div class="box-modal d-flex justify-content-center" >
+      <div class="modalDesk container d-flex flex-column" id="modalGuiaRapido">
+        <div class="box-title-modal d-flex justify-content-center">
+          <h1 class="title-modal">Manual Prático</h1>
+          <div class="box-x-modal align-self-center" id="btnXModal">
+            <img class="img-close-modal align-self-center " src="assets/img/exitModal.png"/>
+          </div>  
+        </div>
+      
+        <div class="box-body-modal">
+          <p class="text-modal">
+              The .toggle() method is provided for convenience. It is relatively straightforward to implement the same behavior by hand, and this can be necessary if the assumptions built into .toggle() prove limiting. For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+          </p>
+          <p class="text-modal">
+              For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+          </p>
+        </div>
+      
+        <section class="box-close-modal d-flex justify-content-center">
+          <button class="closeModal btn btn-modal">Fechar</button>
+        </section>  
+      </div>
+    </div> 
+
+
+    <!-- /// MENU NAVEGAÇÃO // -->
+
+
+    <!-- Menu Superior -->
+    <nav class="nav-top">
+        <section class="container ">
+            
+            <div class="box-img-profile">
+              <img src="assets/img/profile/profile.jpg">
+            </div>
+    
+            <section class="box-top d-flex justify-content-end align-items-center ">
+                <div class="d-flex box-info align-items-center">
+                  
+                  <li class="col-4">
+                      <div>
+                        Seus Direitos
+                      </div>
+                    </li>
+        
+                    <li class="col-4" >
+                        <div>
+                          Fale Conosco
+                        </div>
+                    </li>
+
+                    <li class="col-4">
+                        <div class="box-logo">
+                          <div class="img-logo"></div>
+                        </div>
+                      </li>
+                </div>
+              </section>
+          </section>
+    </nav>
+
+
+   <!-- Menu Inferior -->
+   <nav class="nav-bottom d-flex align-items-center">
+
+
+      <section class="container box-top d-flex justify-content-center ">
+          <div class="box-apresentation d-flex align-items-center justify-content-around">
+            <h6 class="aprensentation">Bem vindo(a), Sarah Sagrilo </h6>
+
+              <div class="box-date-apresentation">
+                <h6 class="">dia</h6>
+                /
+                <h6 class="">mês</h6> 
+              </div>
+              
+              <div class="box-temp">
+                <img class="img-temp" src="assets/img/profile/cold.png">
+                <h6>ºC</h6>
+              </div>
+            
+              <div class="box-rain">
+                <img class="img-rain" src="assets/img/profile/rain.png">
+                <h6 id="percentualRain">xx %</h6>
+              </div>
+          </div>
+        </section>
+
+    </nav>
+
+
+
+
+     <!--Footer 
+
+        <footer class="footer-page">
+            <div class="container">
+                <section class="info-section d-flex justify-content-center"> 
+                  <ul class="col-md-3 d-flex flex-column align-items-center">
+                    <li>
+                      <h4 class="footer-list-header">Sobre DeskMotor</h4></li>
+                    <li>
+                      <div class="link-footer" id="guiaRapido">Manual Prático</div>
+                    </li>
+                    <li>
+                        <div class="link-footer" id="guiaCompleto">Manual Completo</div>
+                    </li>
+                    <li>
+                      <div class="box-policy-footer d-flex  align-items-center flex-column ">
+                        <span  id="termModal" class="term-footer setModalPolicy" >Termos</span>
+                        <span class="term-footer setModalPolicy" id="policyModal" >Política de Privacidade</span>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class=" separator-footer"></div>
+    
+                  <ul class="box-footer-center col-md-4 d-flex flex-column align-items-center">
+                    <li>
+                      <h4 class="footer-list-header">Equipe de Desenvolvimento</h4></li>
+                    <li><a class="link-footer">Suco de cevadiss</a></li>
+                    <li><a class="link-footer">Lorem Ipsum</a></li>
+                    <li><a class="link-footer">Cícero em 45 AC</a></li>
+                  </ul>
+
+                  <div class=" separator-footer"></div>
+    
+                  <ul class="col-md-3 d-flex flex-column align-items-center">
+                    <li>
+                      <h4 class="footer-list-header">Parceiros</h4></li>
+                    <li><a class="link-footer" href="https://www.facebook.com/zedsonnn/" target="_blank">Zeds</a></li>
+                    <li><a class="link-footer">Carte Digital</a></li>
+                    <li><a class="link-footer">Beer Sport Club</a></li>
+                  </ul>
+                </section>
+              </div>
+    
+    
+            <div class="footer-line"></div>
+
+            <section class="footer-bottom d-flex justify-content-center align-items-center">
+              <span class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> Rio de Janeiro, 2017 - Todos os direitos reservados.
+              </span>
+
+              
+
+            </section>
+      </footer> -->
+
+
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <!-- <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> -->
+        <script src="assets/bootstrap4.0/js/bootstrap.min.js"></script>
+        <script src="assets/js/label-input.js"></script>
+        <script src="assets/js/modal.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+  </html>

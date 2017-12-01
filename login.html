@@ -8,7 +8,7 @@
       <link rel="stylesheet" href="assets/bootstrap4.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/css/login.css">
       <link rel="stylesheet" href="assets/css/modal.css">
-      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/loading.css">
   </head>    
 
   <body>
@@ -23,11 +23,11 @@
         <!-- Modal Manual Prático -->
     <div class="box-modal d-flex justify-content-center" >
       <div class="modalDesk container d-flex flex-column" id="modalGuiaRapido">
-        <div class="box-title-modal d-flex justify-content-center" id="boxTitleModal">
+        <div class="box-title-modal d-flex justify-content-center">
           <h1 class="title-modal">Manual Prático</h1>
-          <div class="btn-x-modal d-flex justify-content-center align-items-center" id="btnXModal">
-            <i class="fa fa-times ml-auto p-2" aria-hidden="true"></i>
-          </div>
+          <div class="box-x-modal align-self-center" id="btnXModal">
+            <img class="img-close-modal align-self-center " src="assets/img/exitModal.png"/>
+          </div>  
         </div>
       
         <div class="box-body-modal">
@@ -50,11 +50,12 @@
       <div class="modalDesk container d-flex flex-column" id="modalGuiaCompleto">
         <div class="box-title-modal d-flex justify-content-center">
           <h1 class="title-modal">Manual Completo</h1>
+          <div class="box-x-modal align-self-center" id="btnXModal">
+            <img class="img-close-modal align-self-center " src="assets/img/exitModal.png"/>
+          </div>  
         </div>
 
-        <div class="btn-x-modal d-flex justify-content-center align-items-center" id="btnXModal">
-            <i class="fa fa-times ml-auto p-2" aria-hidden="true"></i>
-        </div>
+        
         
         <div class="box-body-modal">
           <p class="text-modal">
@@ -85,11 +86,12 @@
         <div class="modalDesk container d-flex flex-column" id="termsRegisterModal">
           <div class="box-title-modal d-flex justify-content-center">
             <h1 class="title-modal">Termos</h1>
+            <div class="box-x-modal align-self-center" id="btnXModal">
+              <img class="img-close-modal align-self-center " src="assets/img/exitModal.png"/>
+            </div>  
           </div>
 
-          <div class="btn-x-modal d-flex justify-content-center align-items-center" id="btnXModal">
-              <i class="fa fa-times ml-auto p-2" aria-hidden="true"></i>
-          </div>
+         
           
           <div class="box-body-modal">
             <p class="text-modal">
@@ -110,12 +112,13 @@
         <div class="modalDesk container d-flex flex-column" id="policyRegisterModal">
           <div class="box-title-modal d-flex justify-content-center">
             <h1 class="title-modal">Politica de Privacidade</h1>
+            <div class="box-x-modal align-self-center" id="btnXModal">
+              <img class="img-close-modal align-self-center " src="assets/img/exitModal.png"/>
+            </div>  
           </div>
 
 
-          <div class="btn-x-modal d-flex justify-content-center align-items-center" id="btnXModal">
-              <i class="fa fa-times ml-auto p-2" aria-hidden="true"></i>
-          </div>
+          
           
           <div class="box-body-modal">
             <p class="text-modal">
@@ -318,7 +321,7 @@
                         <div class="link-footer" id="guiaCompleto">Manual Completo</div>
                     </li>
                     <li>
-                      <div class="d-flex align-items-center flex-column">
+                      <div class="box-policy-footer d-flex  align-items-center flex-column ">
                         <span  id="termModal" class="term-footer setModalPolicy" >Termos</span>
                         <span class="term-footer setModalPolicy" id="policyModal" >Política de Privacidade</span>
                       </div>

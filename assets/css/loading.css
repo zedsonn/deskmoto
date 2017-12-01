@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+/*Loading page*/
+
+.loading-page{
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    position: fixed;
+  }
+  
+  .loading-img{
+    z-index: 1000;
+    width: 230px;
+    height: 230px;
+  }
+  
+  .loading-point{ 
+    z-index: 1001;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    animation: rotation 5s infinite;
+  }
+  
+  @keyframes rotation {
+    0% {transform: rotate(-31deg);}
+    50% {transform: rotate(171deg);}
+    75% {transform: rotate(160deg);}
+    100% {transform: rotate(-31deg);}
+      
+    }
+
