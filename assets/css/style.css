@@ -1,4 +1,91 @@
+body {
+  background-color: rgba(43, 42, 42, 0.871);;
+  background-size:cover;
+  height: 100%;
+  margin: auto;
+  font-family: 'PT Sans', sans-serif;
+}
 
+/*Menu de Navegação*/
+
+.nav-top{
+  background-color: #FF0;
+  width: 100%;
+  height: 56px;
+}
+.box-top{
+height: 100%;
+}
+
+.box-info{
+  list-style: none;
+  text-align: center;
+  font-size: .8em;
+  height:56px;
+}
+
+.box-logo{
+  width: 50px;
+  height: 50px;
+
+}
+
+.box-logo{
+  background-image: url('../img/profile/logoMenu.png');
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+}
+
+
+.nav-bottom{
+  background-color: black;
+  width: 100%;
+  height: 100px;
+}
+
+.box-img-profile{
+  position: absolute !important;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+  border-radius:20px 50% 50%  20px ;
+  border: 3px solid yellow;
+}
+
+
+.box-apresentation{
+  height: fit-content;
+  background-color: white;
+}
+
+.apresentation{
+
+}
+
+.box-temp{
+
+}
+
+.img-temp{
+  width: 32px;
+  height: 32px;
+}
+
+.box-rain{
+}
+
+.img-rain{
+  width: 32px;
+  height: 32px;
+}
+
+
+.box-menu-bottom{
+  width: 
+}
 
 
 
@@ -34,9 +121,7 @@
 }
 
 .link-footer:hover{
-  border-bottom: 2px solid black;
-  text-decoration: none;
-  text-transform: uppercase;
+  font-weight: 900;
 }
 
 
@@ -46,7 +131,7 @@
 }
 
 .term-footer:hover{
-  border-bottom: 2px solid black;
+  font-weight: 900;
   text-decoration: none;
 }
 
