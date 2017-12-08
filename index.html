@@ -46,129 +46,197 @@
     </div> 
 
 
-    <!-- /// MENU NAVEGAÇÃO // -->
-
-
-    <!-- Menu Superior -->
-    <nav class="nav-top">
-        <section class="container ">
-            
-            <div class="box-img-profile">
-              <img src="assets/img/profile/profile.jpg">
-            </div>
-    
-            <section class="box-top d-flex justify-content-end align-items-center ">
-                <div class="d-flex box-info align-items-center">
-                  
-                  <li class="col-4">
-                      <div>
-                        Seus Direitos
-                      </div>
-                    </li>
-        
-                    <li class="col-4" >
-                        <div>
-                          Fale Conosco
-                        </div>
-                    </li>
-
-                    <li class="col-4">
-                        <div class="box-logo">
-                          <div class="img-logo"></div>
-                        </div>
-                      </li>
-                </div>
-              </section>
-          </section>
-    </nav>
-
-
-   <!-- Menu Inferior -->
-   <nav class="nav-bottom d-flex align-items-center">
-
-
-      <section class="container box-top d-flex justify-content-center ">
-          <div class="box-apresentation d-flex align-items-center justify-content-around">
-            <h6 class="aprensentation">Bem vindo(a), Sarah Sagrilo </h6>
-
-              <div class="box-date-apresentation">
-                <h6 class="">dia</h6>
-                /
-                <h6 class="">mês</h6> 
-              </div>
-              
-              <div class="box-temp">
-                <img class="img-temp" src="assets/img/profile/cold.png">
-                <h6>ºC</h6>
-              </div>
-            
-              <div class="box-rain">
-                <img class="img-rain" src="assets/img/profile/rain.png">
-                <h6 id="percentualRain">xx %</h6>
-              </div>
+    <!-- Modal Manual Completo -->
+    <div class="box-modal d-flex justify-content-center">
+      
+        <div class="modalDesk container d-flex flex-column" id="modalGuiaCompleto">
+          <div class="box-title-modal d-flex justify-content-center">
+            <h1 class="title-modal">Manual Completo</h1>
+            <div class="box-x-modal align-self-center" id="btnXModal">
+              <img class="img-close-modal align-self-center " src="assets/img/exitModal.png"/>
+            </div>  
           </div>
+  
+          
+          
+          <div class="box-body-modal">
+            <p class="text-modal">
+                The .toggle() method is provided for convenience. It is relatively straightforward to implement the same behavior by hand, and this can be necessary if the assumptions built into .toggle() prove limiting. For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+            </p>
+            <p class="text-modal">
+                For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+            </p>
+            <p class="text-modal">
+                For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+            </p>
+            <p class="text-modal">
+                For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+            </p>
+            <p class="text-modal">
+                For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+            </p>
+          </div>
+          
+          <section class="box-close-modal d-flex justify-content-center">
+            <button class="closeModal btn btn-modal">Fechar</button>
+          </section>
+        </div>
+      </div> 
+
+       <!-- Modal Seus Direitos -->
+    <div class="box-modal d-flex justify-content-center" >
+      <div class="modalDesk container d-flex flex-column" id="modalGuiaRapido">
+        <div class="box-title-modal d-flex justify-content-center">
+          <h1 class="title-modal">Seus Direitos</h1>
+          <div class="box-x-modal align-self-center" id="btnXModal">
+            <img class="img-close-modal align-self-center " src="assets/img/exitModal.png"/>
+          </div>  
+        </div>
+      
+        <div class="box-body-modal">
+          <p class="text-modal">
+              The .toggle() method is provided for convenience. It is relatively straightforward to implement the same behavior by hand, and this can be necessary if the assumptions built into .toggle() prove limiting. For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+          </p>
+          <p class="text-modal">
+              For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+          </p>
+        </div>
+      
+        <section class="box-close-modal d-flex justify-content-center">
+          <button class="closeModal btn btn-modal">Fechar</button>
+        </section>  
+      </div>
+    </div> 
+
+    
+      <!-- /// MENU NAVEGAÇÃO // -->
+
+
+    <!-- Box de Aprensentação -->
+    <nav class="nav-top">
+      <section class="container">
+        <!-- Logo --> 
+        <div class="box-logo container d-flex justify-content-center align-items-center">
+            <a id="linkLogo" href="index.html">
+              <img class="logo" id="logo" src="assets/img/profile/logoMenu.png" alt="Logo">
+            </a>
+        </div>
+          
+    
+      <div class="d-flex align-items-center flex-column">
+        <h5 class="apresentation">Bem vindo(a), <span id="username">Sarah Sagrilo</span></h5>
+      </div>
+
+          <!-- Icones do Menu de Navegação -->
+        <div class="d-flex box-top  justify-content-around">
+
+
+          <!-- Manual -->
+          <div class="social" id="btnManual">
+              <i class="fa fa-book" aria-hidden="true"></i>             
+          </div>
+          <!-- Direitos -->
+          <div class="social" id="btnDireito">               
+              <i class="fa fa-gavel" aria-hidden="true"></i>
+          </div>
+          <!-- Previsão de Tempo -->
+          <div class="social">                
+            <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>
+          </div>
+          <!-- Fale Conosco -->
+          <div class="social" id="btnFala">              
+              <i class="fa fa-bullhorn" aria-hidden="true"></i>    
+          </div>
+          <!-- Configuração de Conta -->
+          <div class="social" id="btnConfig">              
+              <i class="fa fa-cogs" aria-hidden="true"></i>              
+          </div>
+      
+        </div>
+      </section>
+
+      
+    </nav>
+    
+        <!-- Menu de Navegação -->
+        <section class="menu" id="menu">
+
+          <!-- Menu Icone <Guia> -->
+    
+          <section id="menuManual" class="box-menu container d-flex justify-content-around align-items-center ">
+            <div id="guiaRapido" class="list-menu">Manual de Instruções Rápido</div>
+            <div id="guiaCompleto" class="list-menu">Manual de Instruções Completo</div>
+
+          </section>
+
+          <!-- Menu Icone <Direitos> -->
+    
+
+          <section id="menuDireito" class="box-menu container d-flex justify-content-around align-items-center">
+            <div id="modalDireito" class="list-menu">Seus Direitos</div>
+            <div id="guiaCompleto" class="list-menu">Simulador de Justiça</div>
+          </section>
+
+          <!-- Menu Icone <Fala Comigo> -->
+    
+
+          <section id="menuFala" class="box-menu container d-flex justify-content-around align-items-center">
+              <div id="modalFala" class="list-menu">Fala comigo!</div>
+          </section>
+
+          <!-- Menu Icone <Configuração da Conta> -->
+          <section id="menuConfig" class="box-menu container d-flex justify-content-around align-items-center">
+            <div id="modalConfig" class="list-menu">Configurações de Conta</div>
+            <div id="modalConfig" class="list-menu">Sair</div>
+          </section>
+
+  
+        </section>
+  
+
+   
+
+    <!--Apps-->
+    <div class="container d-flex flex-column box-container-app">
+      <div class="d-flex justify-content-center">
+        <section class="box-app d-flex justify-content-center align-items-center">
+          <img class="img-app" src="assets/img/delivery.png">
+
+        </section>
+     
+
+        <section class="box-app d-flex justify-content-center align-items-center ">
+          <img class="img-app" src="assets/img/store.png">
+        </section>
+      </div>
+
+      <div class="d-flex justify-content-center">
+          <section class="box-app d-flex justify-content-center align-items-center ">
+              <img class="img-app" src="assets/img/report.svg">  
         </section>
 
-    </nav>
+            <section class="box-app d-flex justify-content-center align-items-center ">
+                <img class="img-app" src="assets/img/fuel.png">  
+          </section>
+      </div>
+    </div>
 
-
-
-
-     <!--Footer 
-
-        <footer class="footer-page">
-            <div class="container">
-                <section class="info-section d-flex justify-content-center"> 
-                  <ul class="col-md-3 d-flex flex-column align-items-center">
-                    <li>
-                      <h4 class="footer-list-header">Sobre DeskMotor</h4></li>
-                    <li>
-                      <div class="link-footer" id="guiaRapido">Manual Prático</div>
-                    </li>
-                    <li>
-                        <div class="link-footer" id="guiaCompleto">Manual Completo</div>
-                    </li>
-                    <li>
-                      <div class="box-policy-footer d-flex  align-items-center flex-column ">
-                        <span  id="termModal" class="term-footer setModalPolicy" >Termos</span>
-                        <span class="term-footer setModalPolicy" id="policyModal" >Política de Privacidade</span>
+<!-- Footer Pagina-->
+    
+    <footer class="footer d-flex justify-content-center">
+        <div class="box-temp d-flex justify-content-center">
+          
+                      <div class="info d-flex flex-column col-6 justify-content-center ">
+                        <img class="img-info align-self-center" src="assets/img/profile/hot.png">
+                        <span id="temperatura">30ºC</span>
                       </div>
-                    </li>
-                  </ul>
-
-                  <div class=" separator-footer"></div>
-    
-                  <ul class="box-footer-center col-md-4 d-flex flex-column align-items-center">
-                    <li>
-                      <h4 class="footer-list-header">Equipe de Desenvolvimento</h4></li>
-                    <li><a class="link-footer">Suco de cevadiss</a></li>
-                    <li><a class="link-footer">Lorem Ipsum</a></li>
-                    <li><a class="link-footer">Cícero em 45 AC</a></li>
-                  </ul>
-
-                  <div class=" separator-footer"></div>
-    
-                  <ul class="col-md-3 d-flex flex-column align-items-center">
-                    <li>
-                      <h4 class="footer-list-header">Parceiros</h4></li>
-                    <li><a class="link-footer" href="https://www.facebook.com/zedsonnn/" target="_blank">Zeds</a></li>
-                    <li><a class="link-footer">Carte Digital</a></li>
-                    <li><a class="link-footer">Beer Sport Club</a></li>
-                  </ul>
-                </section>
-              </div>
-    
-    
-            <div class="footer-line"></div>
-
-            <section class="footer-bottom d-flex justify-content-center align-items-center">
-              <span class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> Rio de Janeiro, 2017 - Todos os direitos reservados.
-              </span>
-
-              
-
-            </section>
-      </footer> -->
+          
+                      <div class="box-info info d-flex col-6 flex-column justify-content-center ">
+                        <img class="img-info align-self-center" src="assets/img/profile/rain.png">
+                        <span id="chuva">89%</span>
+                      </div> 
+                  </div>
+      </footer>
 
 
         <script src="assets/js/jquery-3.2.1.min.js"></script>
@@ -177,5 +245,8 @@
         <script src="assets/js/label-input.js"></script>
         <script src="assets/js/modal.js"></script>
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/index.js"></script>
     </body>
+
+    
   </html>

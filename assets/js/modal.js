@@ -130,6 +130,44 @@ $(function(){
         },700);
     });
 
+    //Modal Simulador de justiça
+    $("#boxDireito").on("click", function(){
+        console.log("oi");
+        $("#boxModalRapido").css({
+            display: "block",
+        });
+
+        $("#modalGuiaRapido").css({
+            zIndex: '3500',
+            opacity: '1',
+        });
+
+
+        $("#modalGuiaRapido").animate({
+            height: '65vh',
+            width: '75%',
+
+        },700);
+    });
+
+    //Fechar Modal
+    $(".closeModal, #btnXModal").on('click', function(){
+        $("#modalGuiaRapido").animate({
+            height: '0',
+            width: '0',
+        },700);
+        setTimeout(function(){
+            $("#modalGuiaRapido").css({
+                opacity: '0',
+                zIndex: '-100',
+            })
+
+            $("#boxModalRapido").css({
+                display: "none",
+            });
+        }, 680);
+    });
+
     $(".closeModal , #btnXModal").on('click', function(){
         $("#policyRegisterModal").animate({
             height: '0',
