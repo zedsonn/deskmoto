@@ -5,6 +5,7 @@ $(function(){
             transform: 'translateY(-25px)',
             transition: "all .2s ease-out",
             fontWeight: "900",
+            color: 'white',
         });
         
         $("#barEmail").css({
@@ -48,6 +49,7 @@ $(function(){
             transform: 'translateY(-25px)',
             transition: "all .2s ease-out",
             fontWeight: "900",
+            color: 'white',
         });
         if($("#pass").val() == ''){
             $("#barPass").css({
