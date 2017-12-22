@@ -2,12 +2,14 @@
 <html lang="pt-br">
   <head>
       <meta charset="UTF-8">
-      <title>DeskMotor</title>
+      <title>DeskMoto</title>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <link rel="stylesheet"href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="assets/css/loading.css">
+      <link rel="stylesheet" href="assets/css/normalize.css">
       <link rel="stylesheet" href="assets/bootstrap4.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/css/modal.css">
+      <link rel="stylesheet" href="assets/css/modalApp.css">
       <link rel="stylesheet" href="assets/css/style.css">
   </head>    
 
@@ -46,136 +48,337 @@
     </div> 
 
 
-    <!-- /// MENU NAVEGAÇÃO // -->
-
-
-    <!-- Menu Superior -->
-    <nav class="nav-top">
-        <section class="container ">
-            
-            <div class="box-img-profile">
-              <img src="assets/img/profile/profile.jpg">
-            </div>
-    
-            <section class="box-top d-flex justify-content-end align-items-center ">
-                <div class="d-flex box-info align-items-center">
-                  
-                  <li class="col-4">
-                      <div>
-                        Seus Direitos
-                      </div>
-                    </li>
-        
-                    <li class="col-4" >
-                        <div>
-                          Fale Conosco
-                        </div>
-                    </li>
-
-                    <li class="col-4">
-                        <div class="box-logo">
-                          <div class="img-logo"></div>
-                        </div>
-                      </li>
-                </div>
-              </section>
+    <!-- Modal Manual Completo -->
+    <div class="box-modal-app d-flex justify-content-center">
+      
+        <div class="modalDesk container d-flex flex-column" id="modalGuiaCompleto">
+          <div class="box-title-modal d-flex justify-content-center">
+            <h1 class="title-modal">Manual Completo</h1>
+            <div class="box-x-modal align-self-center" id="btnXModal">
+              <img class="img-close-modal align-self-center " src="assets/img/exitModal.png"/>
+            </div>  
+          </div>
+  
+          
+          
+          <div class="box-body-modal">
+            <p class="text-modal">
+                The .toggle() method is provided for convenience. It is relatively straightforward to implement the same behavior by hand, and this can be necessary if the assumptions built into .toggle() prove limiting. For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+            </p>
+            <p class="text-modal">
+                For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+            </p>
+            <p class="text-modal">
+                For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+            </p>
+            <p class="text-modal">
+                For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+            </p>
+            <p class="text-modal">
+                For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+            </p>
+          </div>
+          
+          <section class="box-close-modal d-flex justify-content-center">
+            <button class="closeModal btn btn-modal">Fechar</button>
           </section>
-    </nav>
+        </div>
+      </div> 
 
+       <!-- Modal Seus Direitos -->
+    <div class="box-modal d-flex justify-content-center" >
+      <div class="modalDesk container d-flex flex-column" id="modalGuiaRapido">
+        <div class="box-title-modal d-flex justify-content-center">
+          <h1 class="title-modal">Seus Direitos</h1>
+          <div class="box-x-modal align-self-center" id="btnXModal">
+            <img class="img-close-modal align-self-center " src="assets/img/exitModal.png"/>
+          </div>  
+        </div>
+      
+        <div class="box-body-modal">
+          <p class="text-modal">
+              The .toggle() method is provided for convenience. It is relatively straightforward to implement the same behavior by hand, and this can be necessary if the assumptions built into .toggle() prove limiting. For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+          </p>
+          <p class="text-modal">
+              For example, .toggle() is not guaranteed to work correctly if applied twice to the same element. Since .toggle() internally uses a click handler to do its work, we must unbind click to remove a behavior attached with .toggle(), so other click handlers can be caught in the crossfire. The implementation also calls .preventDefault() on the event, so links will not be followed and buttons will not be clicked if .toggle() has been called on the element.
+          </p>
+        </div>
+      
+        <section class="box-close-modal d-flex justify-content-center">
+          <button class="closeModal btn btn-modal">Fechar</button>
+        </section>  
+      </div>
+    </div> 
 
-   <!-- Menu Inferior -->
-   <nav class="nav-bottom d-flex align-items-center">
+    <!-- Modal App Delivery -->
+    <div class="box-modal d-flex justify-content-center" >
+        <div class="modal-desk-app container d-flex flex-column" id="deliveryApp">
+          
+          <div class="box-title-modal-app d-flex flex-column align-items-center justify-content-around">
+            
+            <img class="logo" id="logo" src="assets/img/logoMenu.png" alt="Logo">
 
+            <div class="box-title-app">
+              <h3>Menu de Entrega</h3>
+            </div>
+          
+          </div>
+        
+          <div class="box-body-modal-app d-flex flex-column justify-content-around align-self-center align-items-center">
+            
 
-      <section class="container box-top d-flex justify-content-center ">
-          <div class="box-apresentation d-flex align-items-center justify-content-around">
-            <h6 class="aprensentation">Bem vindo(a), Sarah Sagrilo </h6>
+            <select class="store-name" id="storeName">Adicionar Empresa
+              <option value="1">Empresa Recente 1</option>
+              <option value="2">Empresa Recente 2</option>
+              <option value="3">Empresa Recente 3</option>
+              <option value="4">Empresa Recente 4</option>
+              <option value="register" id="cadastroEmpresa">Cadastrar Empresa</option>
+            </select>
 
-              <div class="box-date-apresentation">
-                <h6 class="">dia</h6>
-                /
-                <h6 class="">mês</h6> 
+            <!-- BOX CADASTRO -->
+
+            <div id="boxCadastro" class=" container box-cadastro-off d-flex justify-content-center align-items-center flex-column">
+
+              <div>
+                <label id="labelEmpresa" for="empresaEmpresa" class="input-label">Empresa </label>
+                <input type="text" name="empresaEmpresa" class="input-form" class="input-cadastro" id="empresaEmpresa"/> 
               </div>
               
-              <div class="box-temp">
-                <img class="img-temp" src="assets/img/profile/cold.png">
-                <h6>ºC</h6>
+              <div>
+                <label id="labelTelefone" for="telefoneEmpresa" class="input-label">Telefone </label>
+                <input type="text" name="telefoneEmpresa" class="input-form" class="input-cadastro" id="telefoneEmpresa"/> 
               </div>
+
+              <div>
+                <label id="labelEndereco"for="enderecoEmpresa" class="input-label">Endereço </label>
+                <input type="text" class="input-form" name="enderecoEmpresa" class="input-cadastro" id="enderecoEmpresa"/> 
+              </div>
+
+              <div>
+                <label id="labelContato" for="contatoEmpresa" class="input-label">Contato</label>
+                <input type="text" name="contatoEmpresa" class="input-form" class="input-cadastro" id="contatoEmpresa"/> 
+              </div>
+
+              <!-- Tabela da Taxa de Entrega  -->
+              <div class="box-taxa container d-flex flex-column justify-content-center align-items-center">
+
+                <h6>Taxas de Entrega</h6>
+                
+                <div id="cadastroTaxa" class="box-input-taxa d-flex justify-content-around">
+                  <input type="text" placeholder="Bairro" id="bairroCadastro"/>
+                  <input type="text" placeholder="R$" id="taxaCadastro"/>
+                </div>
+
+                <div id="addBairro"></div>
+
+
+                <div class="box-btn-taxa d-flex justify-content-around">
+                  <span class="btn-taxa d-flex justify-content-center align-items-center" id="addTaxa"><i class="fa fa-plus" aria-hidden="true"></i></span>
+
+                </div>
+            </div>
+
+
+
+            <!-- Fechar / Salvar Empresa -->
+
+            <div class=" d-flex flex-column align-items-center">
+              <button type="button" class="btn btn-entrega" id="salvarEmpresa">
+                Salvar 
+              </button>
+
+              <button type="button" class="btn btn-entrega" id="voltarMenu">
+                  Voltar
+               </button>
+            </div>
+
+              
+              
+            </div>
+
+            <!-- BOX APP DELIVERY -->
+            <div class="box-delivery d-flex justify-content-center align-items-center flex-column">
             
-              <div class="box-rain">
-                <img class="img-rain" src="assets/img/profile/rain.png">
-                <h6 id="percentualRain">xx %</h6>
+              <div class="box-input d-flex flex-column align-items-center">
+                <label class="input-label" id="labelAddress"for="address">Endereço </label>
+                  <input type="text" class="input-form" name="address" class="" id="address"/>   
               </div>
+
+              
+              <div class="box-entrega d-flex flex-column align-items-center justify-content-around"> 
+                <p>Taxa de Entrega: R$<input id="taxa" value="5" class="taxa"></p>
+              </div>
+
+              <div class="box-btn-entrega d-flex flex-column justify-content-center align-items-center">
+                  <button type="button" class="btn btn-entrega" id="registroEntrega">
+                    <span>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </span>
+                  </button>
+
+                  <button type="button" class="btn btn-entrega" id="rotaMaps">
+                      <span>
+                          <i class="fa fa-map-marker" aria-hidden="true"></i>                        
+                      </span>
+                    </button>
+              </div>
+            </div>
+
+
           </div>
+        
+          <section class="box-close-modal-app d-flex justify-content-center align-items-center">
+            <button class="close-modal-app btn btn-modal-app">Fechar</button>
+          </section>  
+        </div>
+      </div> 
+
+    
+      <!-- /// MENU NAVEGAÇÃO // -->
+
+
+    <!-- Box de Aprensentação -->
+    <nav class="nav-top">
+      <section class="container">
+        <!-- Logo --> 
+        <div class="box-logo container d-flex justify-content-center align-items-center">
+            <a id="linkLogo" href="index.html">
+              <img class="logo" id="logo" src="assets/img/logoMenu.png" alt="Logo">
+            </a>
+        </div>
+          
+    
+      <div class="d-flex align-items-center flex-column">
+        <h5 class="apresentation">Bem vindo(a), <span id="username">Sarah Sagrilo</span></h5>
+      </div>
+
+          <!-- Icones do Menu de Navegação -->
+        <div class="d-flex box-top  justify-content-around">
+
+
+          <!-- Manual -->
+          <div class="social" id="btnManual">
+              <i class="fa fa-book" aria-hidden="true"></i>             
+          </div>
+          <!-- Direitos -->
+          <div class="social" id="btnDireito">               
+              <i class="fa fa-gavel" aria-hidden="true"></i>
+          </div>
+          <!-- Previsão de Tempo -->
+          <div class="social">                
+            <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>
+          </div>
+          <!-- Fale Conosco -->
+          <div class="social" id="btnFala">              
+              <i class="fa fa-bullhorn" aria-hidden="true"></i>    
+          </div>
+          <!-- Configuração de Conta -->
+          <div class="social" id="btnConfig">              
+              <i class="fa fa-cogs" aria-hidden="true"></i>              
+          </div>
+      
+        </div>
+      </section>
+
+      
+    </nav>
+    
+        <!-- Menu de Navegação -->
+        <section class="menu" id="menu">
+
+          <!-- Menu Icone <Guia> -->
+    
+          <section id="menuManual" class="box-menu container d-flex justify-content-around align-items-center ">
+            <div id="guiaRapido" class="list-menu">Manual de Instruções Rápido</div>
+            <div id="guiaCompleto" class="list-menu">Manual de Instruções Completo</div>
+
+          </section>
+
+          <!-- Menu Icone <Direitos> -->
+    
+
+          <section id="menuDireito" class="box-menu container d-flex justify-content-around align-items-center">
+            <div id="modalDireito" class="list-menu">Seus Direitos</div>
+            <div id="guiaCompleto" class="list-menu">Simulador de Justiça</div>
+          </section>
+
+          <!-- Menu Icone <Fala Comigo> -->
+    
+
+          <section id="menuFala" class="box-menu container d-flex justify-content-around align-items-center">
+              <div id="modalFala" class="list-menu">Fala comigo!</div>
+          </section>
+
+          <!-- Menu Icone <Configuração da Conta> -->
+          <section id="menuConfig" class="box-menu container d-flex justify-content-around align-items-center">
+            <div id="modalConfig" class="list-menu">Configurações de Conta</div>
+            <div id="modalConfig" class="list-menu">Tchambs Configuração</div>
+            <div id="modalConfig" class="list-menu">Sair</div>
+          </section>
+
+  
+        </section>
+  
+
+   
+
+    <!--Apps-->
+    <div class="box-container-app container d-flex flex-column ">
+      <div id="boxAppTop"class="d-flex justify-content-center">
+          
+
+        <!-- APP ENTREGA -->
+        <section id="delivery" class="box-app d-flex justify-content-center align-items-center">
+          <img class="img-app" id="imgDelivery" src="assets/img/delivery.png">
+        </section>
+     
+        <!-- APP JOBS -->
+        <section id="jobs" class="box-app d-flex justify-content-center align-items-center ">
+          <img class="img-app" src="assets/img/store.png">
+        </section>
+      </div>
+
+      <div id="boxAppBottom" class="d-flex justify-content-center">
+        <!-- APP RELATÓRIO -->
+        <section id="report" class="box-app d-flex justify-content-center align-items-center ">
+          <img class="img-app" src="assets/img/report.png">  
         </section>
 
-    </nav>
+        <!-- APP CONSUMO -->
+        <section id="fuel" class="box-app d-flex justify-content-center align-items-center ">
+          <img class="img-app" src="assets/img/fuel.png">  
+        </section>
+      </div>
+    </div>
 
-
-
-
-     <!--Footer 
-
-        <footer class="footer-page">
-            <div class="container">
-                <section class="info-section d-flex justify-content-center"> 
-                  <ul class="col-md-3 d-flex flex-column align-items-center">
-                    <li>
-                      <h4 class="footer-list-header">Sobre DeskMotor</h4></li>
-                    <li>
-                      <div class="link-footer" id="guiaRapido">Manual Prático</div>
-                    </li>
-                    <li>
-                        <div class="link-footer" id="guiaCompleto">Manual Completo</div>
-                    </li>
-                    <li>
-                      <div class="box-policy-footer d-flex  align-items-center flex-column ">
-                        <span  id="termModal" class="term-footer setModalPolicy" >Termos</span>
-                        <span class="term-footer setModalPolicy" id="policyModal" >Política de Privacidade</span>
+<!-- Footer Pagina-->
+    
+    <footer class="footer d-flex justify-content-center">
+        <div class="box-temp d-flex justify-content-center">
+          
+                      <div class="info d-flex flex-column col-6 justify-content-center ">
+                        <img class="img-info align-self-center" src="assets/img/hot.png">
+                        <span id="temperatura">30ºC</span>
                       </div>
-                    </li>
-                  </ul>
-
-                  <div class=" separator-footer"></div>
-    
-                  <ul class="box-footer-center col-md-4 d-flex flex-column align-items-center">
-                    <li>
-                      <h4 class="footer-list-header">Equipe de Desenvolvimento</h4></li>
-                    <li><a class="link-footer">Suco de cevadiss</a></li>
-                    <li><a class="link-footer">Lorem Ipsum</a></li>
-                    <li><a class="link-footer">Cícero em 45 AC</a></li>
-                  </ul>
-
-                  <div class=" separator-footer"></div>
-    
-                  <ul class="col-md-3 d-flex flex-column align-items-center">
-                    <li>
-                      <h4 class="footer-list-header">Parceiros</h4></li>
-                    <li><a class="link-footer" href="https://www.facebook.com/zedsonnn/" target="_blank">Zeds</a></li>
-                    <li><a class="link-footer">Carte Digital</a></li>
-                    <li><a class="link-footer">Beer Sport Club</a></li>
-                  </ul>
-                </section>
-              </div>
-    
-    
-            <div class="footer-line"></div>
-
-            <section class="footer-bottom d-flex justify-content-center align-items-center">
-              <span class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> Rio de Janeiro, 2017 - Todos os direitos reservados.
-              </span>
-
-              
-
-            </section>
-      </footer> -->
+          
+                      <div class="box-info info d-flex col-6 flex-column justify-content-center ">
+                        <img class="img-info align-self-center" src="assets/img/rain.png">
+                        <span id="chuva">89%</span>
+                      </div> 
+                  </div>
+      </footer>
 
 
         <script src="assets/js/jquery-3.2.1.min.js"></script>
         <!-- <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> -->
         <script src="assets/bootstrap4.0/js/bootstrap.min.js"></script>
         <script src="assets/js/label-input.js"></script>
-        <script src="assets/js/modal.js"></script>
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/modalApp.js"></script>
+        <script src="assets/js/modal.js"></script>
+        
     </body>
+
+    
   </html>

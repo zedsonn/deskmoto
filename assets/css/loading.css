@@ -20,7 +20,7 @@
     width: 150px;
     height: 150px;
     position: absolute;
-    animation: rotation 5s infinite;
+    animation: rotation 5s normal;
   }
   
   @keyframes rotation {
