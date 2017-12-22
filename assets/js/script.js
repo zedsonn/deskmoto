@@ -1,6 +1,5 @@
 $(function(){
-    $("#loading").remove();
-
+   
     //Transição de Formulário para Cadastro/Login
 
     //Login para Cadastro

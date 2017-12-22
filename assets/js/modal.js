@@ -1,5 +1,7 @@
 //Modal Guia Rápido
 $(function(){
+    $("#loading").remove();
+    
     //Modal Guia Rápido
     $("#guiaRapido").on("click", function(){
         $("#boxModalRapido").css({

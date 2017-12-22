@@ -57,10 +57,6 @@ a{
   margin: 0 auto;
 }
 
-.box-slogan{
-  margin: auto 0;
-}
-
 .title{
   color: #ffff00;
 }
@@ -71,7 +67,7 @@ a{
   position: absolute;
   top:250px;
   margin: 0 auto;
-  font-size: .8em
+  font-size: .8em;
 }
 
 
@@ -374,6 +370,9 @@ a{
 
 
 @media only screen and (max-width: 580px) {
+
+
+
   .box-container{
     display: flex !important;
     justify-content: space-around !important;

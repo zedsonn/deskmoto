@@ -6,8 +6,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <link rel="stylesheet"href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="assets/css/loading.css">
+      <link rel="stylesheet" href="assets/css/normalize.css">
       <link rel="stylesheet" href="assets/bootstrap4.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/css/modal.css">
+      <link rel="stylesheet" href="assets/css/modalApp.css">
       <link rel="stylesheet" href="assets/css/style.css">
   </head>    
 
@@ -47,7 +49,7 @@
 
 
     <!-- Modal Manual Completo -->
-    <div class="box-modal d-flex justify-content-center">
+    <div class="box-modal-app d-flex justify-content-center">
       
         <div class="modalDesk container d-flex flex-column" id="modalGuiaCompleto">
           <div class="box-title-modal d-flex justify-content-center">
@@ -108,6 +110,129 @@
       </div>
     </div> 
 
+    <!-- Modal App Delivery -->
+    <div class="box-modal d-flex justify-content-center" >
+        <div class="modal-desk-app container d-flex flex-column" id="deliveryApp">
+          
+          <div class="box-title-modal-app d-flex flex-column align-items-center justify-content-around">
+            
+            <img class="logo" id="logo" src="assets/img/logoMenu.png" alt="Logo">
+
+            <div class="box-title-app">
+              <h3>Menu de Entrega</h3>
+            </div>
+          
+          </div>
+        
+          <div class="box-body-modal-app d-flex flex-column justify-content-around align-self-center align-items-center">
+            
+
+            <select class="store-name" id="storeName">Adicionar Empresa
+              <option value="1">Empresa Recente 1</option>
+              <option value="2">Empresa Recente 2</option>
+              <option value="3">Empresa Recente 3</option>
+              <option value="4">Empresa Recente 4</option>
+              <option value="register" id="cadastroEmpresa">Cadastrar Empresa</option>
+            </select>
+
+            <!-- BOX CADASTRO -->
+
+            <div id="boxCadastro" class=" container box-cadastro-off d-flex justify-content-center align-items-center flex-column">
+
+              <div>
+                <label id="labelEmpresa" for="empresaEmpresa" class="input-label">Empresa </label>
+                <input type="text" name="empresaEmpresa" class="input-form" class="input-cadastro" id="empresaEmpresa"/> 
+              </div>
+              
+              <div>
+                <label id="labelTelefone" for="telefoneEmpresa" class="input-label">Telefone </label>
+                <input type="text" name="telefoneEmpresa" class="input-form" class="input-cadastro" id="telefoneEmpresa"/> 
+              </div>
+
+              <div>
+                <label id="labelEndereco"for="enderecoEmpresa" class="input-label">Endereço </label>
+                <input type="text" class="input-form" name="enderecoEmpresa" class="input-cadastro" id="enderecoEmpresa"/> 
+              </div>
+
+              <div>
+                <label id="labelContato" for="contatoEmpresa" class="input-label">Contato</label>
+                <input type="text" name="contatoEmpresa" class="input-form" class="input-cadastro" id="contatoEmpresa"/> 
+              </div>
+
+              <!-- Tabela da Taxa de Entrega  -->
+              <div class="box-taxa container d-flex flex-column justify-content-center align-items-center">
+
+                <h6>Taxas de Entrega</h6>
+                
+                <div id="cadastroTaxa" class="box-input-taxa d-flex justify-content-around">
+                  <input type="text" placeholder="Bairro" id="bairroCadastro"/>
+                  <input type="text" placeholder="R$" id="taxaCadastro"/>
+                </div>
+
+                <div id="addBairro"></div>
+
+
+                <div class="box-btn-taxa d-flex justify-content-around">
+                  <span class="btn-taxa d-flex justify-content-center align-items-center" id="addTaxa"><i class="fa fa-plus" aria-hidden="true"></i></span>
+
+                </div>
+            </div>
+
+
+
+            <!-- Fechar / Salvar Empresa -->
+
+            <div class=" d-flex flex-column align-items-center">
+              <button type="button" class="btn btn-entrega" id="salvarEmpresa">
+                Salvar 
+              </button>
+
+              <button type="button" class="btn btn-entrega" id="voltarMenu">
+                  Voltar
+               </button>
+            </div>
+
+              
+              
+            </div>
+
+            <!-- BOX APP DELIVERY -->
+            <div class="box-delivery d-flex justify-content-center align-items-center flex-column">
+            
+              <div class="box-input d-flex flex-column align-items-center">
+                <label class="input-label" id="labelAddress"for="address">Endereço </label>
+                  <input type="text" class="input-form" name="address" class="" id="address"/>   
+              </div>
+
+              
+              <div class="box-entrega d-flex flex-column align-items-center justify-content-around"> 
+                <p>Taxa de Entrega: R$<input id="taxa" value="5" class="taxa"></p>
+              </div>
+
+              <div class="box-btn-entrega d-flex flex-column justify-content-center align-items-center">
+                  <button type="button" class="btn btn-entrega" id="registroEntrega">
+                    <span>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </span>
+                  </button>
+
+                  <button type="button" class="btn btn-entrega" id="rotaMaps">
+                      <span>
+                          <i class="fa fa-map-marker" aria-hidden="true"></i>                        
+                      </span>
+                    </button>
+              </div>
+            </div>
+
+
+          </div>
+        
+          <section class="box-close-modal-app d-flex justify-content-center align-items-center">
+            <button class="close-modal-app btn btn-modal-app">Fechar</button>
+          </section>  
+        </div>
+      </div> 
+
     
       <!-- /// MENU NAVEGAÇÃO // -->
 
@@ -118,7 +243,7 @@
         <!-- Logo --> 
         <div class="box-logo container d-flex justify-content-center align-items-center">
             <a id="linkLogo" href="index.html">
-              <img class="logo" id="logo" src="assets/img/profile/logoMenu.png" alt="Logo">
+              <img class="logo" id="logo" src="assets/img/logoMenu.png" alt="Logo">
             </a>
         </div>
           
@@ -187,8 +312,7 @@
           <!-- Menu Icone <Configuração da Conta> -->
           <section id="menuConfig" class="box-menu container d-flex justify-content-around align-items-center">
             <div id="modalConfig" class="list-menu">Configurações de Conta</div>
-            <div id="modalConfig" class="list-menu">Configurações de Tchambs</div>
-            <div id="modalConfig" class="list-menu">Tchambs Configuração de</div>
+            <div id="modalConfig" class="list-menu">Tchambs Configuração</div>
             <div id="modalConfig" class="list-menu">Sair</div>
           </section>
 
@@ -199,27 +323,31 @@
    
 
     <!--Apps-->
-    <div class="container d-flex flex-column box-container-app">
-      <div class="d-flex justify-content-center">
-        <section class="box-app d-flex justify-content-center align-items-center">
-          <img class="img-app" src="assets/img/delivery.png">
+    <div class="box-container-app container d-flex flex-column ">
+      <div id="boxAppTop"class="d-flex justify-content-center">
+          
 
+        <!-- APP ENTREGA -->
+        <section id="delivery" class="box-app d-flex justify-content-center align-items-center">
+          <img class="img-app" id="imgDelivery" src="assets/img/delivery.png">
         </section>
      
-
-        <section class="box-app d-flex justify-content-center align-items-center ">
+        <!-- APP JOBS -->
+        <section id="jobs" class="box-app d-flex justify-content-center align-items-center ">
           <img class="img-app" src="assets/img/store.png">
         </section>
       </div>
 
-      <div class="d-flex justify-content-center">
-          <section class="box-app d-flex justify-content-center align-items-center ">
-              <img class="img-app" src="assets/img/report.svg">  
+      <div id="boxAppBottom" class="d-flex justify-content-center">
+        <!-- APP RELATÓRIO -->
+        <section id="report" class="box-app d-flex justify-content-center align-items-center ">
+          <img class="img-app" src="assets/img/report.png">  
         </section>
 
-            <section class="box-app d-flex justify-content-center align-items-center ">
-                <img class="img-app" src="assets/img/fuel.png">  
-          </section>
+        <!-- APP CONSUMO -->
+        <section id="fuel" class="box-app d-flex justify-content-center align-items-center ">
+          <img class="img-app" src="assets/img/fuel.png">  
+        </section>
       </div>
     </div>
 
@@ -229,12 +357,12 @@
         <div class="box-temp d-flex justify-content-center">
           
                       <div class="info d-flex flex-column col-6 justify-content-center ">
-                        <img class="img-info align-self-center" src="assets/img/profile/hot.png">
+                        <img class="img-info align-self-center" src="assets/img/hot.png">
                         <span id="temperatura">30ºC</span>
                       </div>
           
                       <div class="box-info info d-flex col-6 flex-column justify-content-center ">
-                        <img class="img-info align-self-center" src="assets/img/profile/rain.png">
+                        <img class="img-info align-self-center" src="assets/img/rain.png">
                         <span id="chuva">89%</span>
                       </div> 
                   </div>
@@ -245,9 +373,11 @@
         <!-- <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> -->
         <script src="assets/bootstrap4.0/js/bootstrap.min.js"></script>
         <script src="assets/js/label-input.js"></script>
-        <script src="assets/js/modal.js"></script>
         <script src="assets/js/script.js"></script>
         <script src="assets/js/index.js"></script>
+        <script src="assets/js/modalApp.js"></script>
+        <script src="assets/js/modal.js"></script>
+        
     </body>
 
     

@@ -32,6 +32,7 @@ $(function(){
             transition: "all .2s ease-out",
             opacity: "0.87",
             fontWeight: "400",
+            color: "black",
         });
 
         $("#barEmail").animate({
@@ -85,6 +86,7 @@ $(function(){
             transition: "all .2s ease-out",
             opacity: "0.87",
             fontWeight: "400",
+            color: "black",
         });
 
         $("#barPass").animate({
@@ -286,6 +288,140 @@ $("#passConfirmRegister").on('focusout', function(){
         width: '0',
     },200);
 });
+
+
+ //Efeito input Modal Entrega
+ $("#address").on('focus', function(){
+    $("#labelAddress").css({
+        transform: 'translateY(-25px)',
+        transition: "all .2s ease-out",
+        fontWeight: "900",
+        color: 'white',
+    });
+  
+});
+
+$("#address").on('focusout', function(){
+
+    if($("#address").val()){
+        return;
+    }
+    $("#labelAddress").css({
+        transform: 'translateY(0)',
+        transition: "all .2s ease-out",
+        opacity: "0.87",
+        color: "black",
+        fontWeight: "400",
+    });
+});
+
+//Efeito input Modal Entrega - Cadastro Empresa
+
+
+//empresa
+$("#empresaEmpresa").on('focus', function(){
+    $("#labelEmpresa").css({
+        transform: 'translateY(-25px)',
+        transition: "all .2s ease-out",
+        fontWeight: "900",
+        color: 'white',
+    });
+  
+});
+
+$("#empresaEmpresa").on('focusout', function(){
+
+    if($("#empresaEmpresa").val()){
+        return;
+    }
+    $("#labelEmpresa").css({
+        transform: 'translateY(0)',
+        transition: "all .2s ease-out",
+        opacity: "0.87",
+        color: "black",
+        fontWeight: "400",
+    });
+});
+
+
+
+//Telefone
+$("#telefoneEmpresa").on('focus', function(){
+    $("#labelTelefone").css({
+        transform: 'translateY(-25px)',
+        transition: "all .2s ease-out",
+        fontWeight: "900",
+        color: 'white',
+    });
+  
+});
+
+$("#telefoneEmpresa").on('focusout', function(){
+
+    if($("#telefoneEmpresa").val()){
+        return;
+    }
+    $("#labelTelefone").css({
+        transform: 'translateY(0)',
+        transition: "all .2s ease-out",
+        opacity: "0.87",
+        color: "black",
+        fontWeight: "400",
+    });
+});
+
+
+//Endereço
+$("#enderecoEmpresa").on('focus', function(){
+    $("#labelEndereco").css({
+        transform: 'translateY(-25px)',
+        transition: "all .2s ease-out",
+        fontWeight: "900",
+        color: 'white',
+    });
+  
+});
+
+$("#enderecoEmpresa").on('focusout', function(){
+
+    if($("#enderecoEmpresa").val()){
+        return;
+    }
+    $("#labelEndereco").css({
+        transform: 'translateY(0)',
+        transition: "all .2s ease-out",
+        opacity: "0.87",
+        color: "black",
+        fontWeight: "400",
+    });
+});
+
+
+//Contato
+$("#contatoEmpresa").on('focus', function(){
+    $("#labelContato").css({
+        transform: 'translateY(-25px)',
+        transition: "all .2s ease-out",
+        fontWeight: "900",
+        color: 'white',
+    });
+  
+});
+
+$("#contatoEmpresa").on('focusout', function(){
+
+    if($("#contatoEmpresa").val()){
+        return;
+    }
+    $("#labelContato").css({
+        transform: 'translateY(0)',
+        transition: "all .2s ease-out",
+        opacity: "0.87",
+        color: "black",
+        fontWeight: "400",
+    });
+});
+
 
 
 });
