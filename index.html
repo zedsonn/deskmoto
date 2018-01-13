@@ -6,7 +6,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <link rel="stylesheet"href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="assets/css/loading.css">
-      <link rel="stylesheet" href="assets/css/normalize.css">
       <link rel="stylesheet" href="assets/bootstrap4.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/css/modal.css">
       <link rel="stylesheet" href="assets/css/modalApp.css">
@@ -19,6 +18,8 @@
         <img class="loading-img" src="assets/img/loading.png">
         <img class="loading-point" id="pointer" src="assets/img/ponteiro-loading.png">  
     </div>
+
+    
 
         <!-- /// MODAL /// -->
 
@@ -111,6 +112,11 @@
     </div> 
 
     <!-- Modal App Delivery -->
+
+    <!-- Tela escura atras do Modal App -->
+    <section class="black-window"></section>
+
+
     <div class="box-modal d-flex justify-content-center" >
         <div class="modal-desk-app container d-flex flex-column" id="deliveryApp">
           
@@ -139,28 +145,28 @@
 
             <div id="boxCadastro" class=" container box-cadastro-off d-flex justify-content-center align-items-center flex-column">
 
-              <div>
+              <div class="box-input-cadastro d-flex justify-content-center">
                 <label id="labelEmpresa" for="empresaEmpresa" class="input-label">Empresa </label>
                 <input type="text" name="empresaEmpresa" class="input-form" class="input-cadastro" id="empresaEmpresa"/> 
               </div>
               
-              <div>
+              <div class="box-input-cadastro d-flex justify-content-center">
                 <label id="labelTelefone" for="telefoneEmpresa" class="input-label">Telefone </label>
                 <input type="text" name="telefoneEmpresa" class="input-form" class="input-cadastro" id="telefoneEmpresa"/> 
               </div>
 
-              <div>
+              <div class="box-input-cadastro d-flex justify-content-center">
                 <label id="labelEndereco"for="enderecoEmpresa" class="input-label">Endereço </label>
                 <input type="text" class="input-form" name="enderecoEmpresa" class="input-cadastro" id="enderecoEmpresa"/> 
               </div>
 
-              <div>
+              <div class="box-input-cadastro d-flex justify-content-center">
                 <label id="labelContato" for="contatoEmpresa" class="input-label">Contato</label>
                 <input type="text" name="contatoEmpresa" class="input-form" class="input-cadastro" id="contatoEmpresa"/> 
               </div>
 
               <!-- Tabela da Taxa de Entrega  -->
-              <div class="box-taxa container d-flex flex-column justify-content-center align-items-center">
+              <div class="box-input-cadastro d-flex flex-column justify-content-center align-items-center">
 
                 <h6>Taxas de Entrega</h6>
                 
@@ -174,27 +180,18 @@
 
                 <div class="box-btn-taxa d-flex justify-content-around">
                   <span class="btn-taxa d-flex justify-content-center align-items-center" id="addTaxa"><i class="fa fa-plus" aria-hidden="true"></i></span>
-
                 </div>
-            </div>
+              </div>
+           
+              <!-- Fechar / Salvar Empresa -->
 
+              <div class=" d-flex flex-column align-items-center">
+                <button type="button" class="btn btn-entrega btn-entrega-cadastro" id="salvarEmpresa">
+                  Salvar 
+                </button>
 
-
-            <!-- Fechar / Salvar Empresa -->
-
-            <div class=" d-flex flex-column align-items-center">
-              <button type="button" class="btn btn-entrega" id="salvarEmpresa">
-                Salvar 
-              </button>
-
-              <button type="button" class="btn btn-entrega" id="voltarMenu">
-                  Voltar
-               </button>
-            </div>
-
-              
-              
-            </div>
+              </div>    
+          </div>
 
             <!-- BOX APP DELIVERY -->
             <div class="box-delivery d-flex justify-content-center align-items-center flex-column">
@@ -206,7 +203,7 @@
 
               
               <div class="box-entrega d-flex flex-column align-items-center justify-content-around"> 
-                <p>Taxa de Entrega: R$<input id="taxa" value="5" class="taxa"></p>
+                <p >Taxa de Entrega: <br> R$<input id="taxa" value="5" class="taxa"></p>
               </div>
 
               <div class="box-btn-entrega d-flex flex-column justify-content-center align-items-center">

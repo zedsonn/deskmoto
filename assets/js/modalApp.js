@@ -1,4 +1,5 @@
 $(function(){
+
     //Modal Delivery App
     $("#delivery").on("click", function(){        
         appDelivery();
@@ -9,22 +10,19 @@ $(function(){
        closeModal();
     });
 
-    //Cadastrar Empresa
-    $("#cadastroEmpresa").on("click", function(){
+    //Select Empresa
+    $("#storeName").on("change", function(){
+        if($("#storeName").val() == "register"){
        CadastroEmpresa();
-    });
-
-    //Fechar Cadastrar Empresa e voltar para a tela do app
-    $("#voltarMenu").on("click", function(){
-        $("#boxCadastro").addClass("box-cadastro-off");
-        $(".box-delivery").css({
-            display: "block",
-        })
-        $(".box-delivery").animate({
-            opacity: "1",
-        },680);
-        $("#storeName").val(1);
-    });
+        } else if($("#storeName").val() == "1"){
+            $("#boxCadastro").addClass("box-cadastro-off");
+            $(".box-delivery").removeClass("box-cadastro-off");
+            $(".box-delivery").animate({
+                opacity: "1",
+            },700);
+            appDelivery();
+        }
+     });
 
     $("#addTaxa").on("click", function(){
         var taxa = $("#cadastroTaxa").clone();
@@ -45,24 +43,32 @@ $(function(){
     function appDelivery(){
         window.scrollTo(0, 0);
         $("#storeName").val(1);
+        $("#boxCadastro").addClass("box-cadastro-off");
+        $(".box-delivery").removeClass("box-cadastro-off");
+        $(".box-delivery").addClass("box-cadastro");
 
-    $(".box-modal-app").animate({
-        height: '100%',
-        backgroundColor: "rgba(0,0,0,.2)",
-    },700);
-
-    $(".box-modal-app").css({
-        zIndex: '350',
-    });
-
-    setTimeout(function(){
-        $("#deliveryApp").animate({
-            opacity: 1,
-        },700);
-        $("#deliveryApp").css({
-            zIndex: '400',
+        $(".black-window").css({
+            display: "block",
+            
         });
-    }, 680);
+
+        $(".black-window").animate({
+            height: "100%",
+            backgroundColor: "rgba(0,0,0,.2)",
+        },700);
+
+        $(".black-window").css({
+            zIndex: '350',
+        });
+
+        setTimeout(function(){
+            $("#deliveryApp").animate({
+                opacity: 1,
+            },700);
+            $("#deliveryApp").css({
+                zIndex: '400',
+            });
+        }, 680);
     }
 
    //Mostrar tela de Cadastro de Empresa 
@@ -72,29 +78,38 @@ $(function(){
     },680);
     
     setTimeout(function(){
+        $(".box-delivery").addClass("box-cadastro-off");
         $("#boxCadastro").removeClass("box-cadastro-off");
         $("#boxCadastro").addClass("box-cadastro");
         $(".box-cadastro").animate({
             opacity: "1",
         },680);
+
+        // $(".box-body-modal-app").css({
+        //     height: "100%",
+        // });
+
+        $(".black-window").css({
+            height: "100%",
+        });
     },682);
 
-
-    $(".box-delivery").css({
-        display: "none",
-    });
 }
 
 
     //Fechar Aplicativo
     function closeModal(){
-        $("#address").val(""); 
+        $("#address").val("");
+        
+        
+
+        
         $("#deliveryApp").animate({
             opacity: 0,
         },700);
         setTimeout(function(){
             
-        $(".box-modal-app").animate({
+        $(".black-window").animate({
             height: '0',
             backgroundColor: "rgba(0,0,0,.2)",
             zIndex: "0",
