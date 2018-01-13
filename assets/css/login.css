@@ -134,6 +134,7 @@ a{
 
 .bar{
   display: none;
+  height: 2px;
 }
 
 .box-btn{

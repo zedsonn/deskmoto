@@ -1,7 +1,7 @@
 $(function(){
         //Manual
         $("#btnManual").hover(function(){	
-            console.log("oi");	
+        	
             $(".menu").css({
                 borderBottomWidth: "0",
             });
@@ -28,8 +28,7 @@ $(function(){
             },500);
             
             $(".list-menu").show().css({display: "block"});
-            console.log($("#menuDireito"));
-               
+            
         },function (){
             return;
         });
