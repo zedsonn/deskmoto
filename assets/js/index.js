@@ -13,7 +13,7 @@ $(function(){
                 opacity: 0,
                 display: "none",
             });
-            
+
             $("#menuManual").removeClass("removeElement");
 
             $(".menu").animate({
