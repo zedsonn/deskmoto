@@ -1,7 +1,8 @@
 body {
+    font-family: Lora;
     padding: 0;
     margin: 0;
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     box-sizing: border-box;
     background: rgb(0,0,0) no-repeat;
@@ -14,14 +15,14 @@ body {
     height: 150px;
 }
 
-.box-input{
+.box-input {
     margin: 30px 0;
 }
 
-.box-input > label{
-    position: absolute;
-    z-index:5;
-}
+    .box-input > label {
+        position: absolute;
+        z-index: 5;
+    }
 
     .box-input > input {
         background: rgba(0,0,0,0);
@@ -35,15 +36,19 @@ body {
 
 .btn-login {
     background: rgb(40,40,40);
+    border: none;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 5px 0 0 2px;
     color: white;
     margin-top: 20px;
 }
 
 
-.nav-bottom-login{
-    position:absolute;
+.nav-bottom-login {
+    position: absolute;
     bottom: 20px;
-    color:white;
+    color: white;
+    width: 100%;
 }
 
 
@@ -62,7 +67,7 @@ body {
     transition: none;
 }
 
-.shine:hover:after{
+.shine:active:after {
     background-color: rgba(255, 255, 255, 0);
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -72,14 +77,53 @@ body {
     width: 100%;
 }
 
+
+.facebookBtn, .googleBtn {
+    color: black;
+    font-size: 80%;
+    color: white;
+    width: 75%; 
+    font-size: 80%;
+    border:none;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+    .facebookBtn:active {
+        position: relative;
+        box-shadow: none;
+        top: 2px;
+        transition:ease-in top 300ms;
+    }
+
+    .googleBtn:active {
+        position: relative;
+        box-shadow: none;
+        top: 2px;
+        transition: ease-in top 300ms;
+    }
+
+
+
+    #formLogin > section > div.box-btn.d-flex.flex-justify-content-around.col-9.flex-column > span {
+        text-align: center;
+    }
+
 .facebookBtn {
     background-color: #3B5998;
+}
+
+.googleBtn {
+    background-color: #DC4C3F;
     color: white;
-    margin-top: 45px;
 }
-.facebookBtn:hover{
-    cursor:pointer;
-}
+
+    .facebookBtn:hover, .googleBtn:hover {
+        cursor: pointer;
+    }
+
+
 
 @-webkit-keyframes shining {
     0% {
@@ -90,123 +134,9 @@ body {
         background: right bottom;
     }
 }
+@import url('https://fonts.googleapis.com/css?family=Lora');
 
-/*
-.login-form {
-    background: rgba(43, 42, 42, 0.671);
-    margin: 7em auto;
-    overflow: hidden;
-    position: relative;
-    -moz-border-radius: 0.3em;
-    -webkit-border-radius: 0.3em;
-    border-radius: 0.3em;
-    box-shadow: 2px 2px 0 black;
-    opacity: 1;
+@font-face {
+    font-family: 'Lora', serif;
+    font-family: 'PT Serif', serif;
 }
-
-
-.heading {
-    background: #FA0;
-    color: black;
-    text-align: center;
-    padding: 1.5em;
-}
-
-.box-input {
-    width: 100%;
-    padding: 2em 2em;
-}
-
-    .box-input > input {
-        border-radius: 5px;
-        background: none;
-        text-align: center;
-        outline: none;
-        border: none;
-        color: white;
-        background: rgba(255,255,255,0.4) !important;
-    }
-
-    .box-input > label {
-        color: black;
-        z-index: 2;
-        cursor: text;
-        position: absolute;
-    }
-
-    .box-input > input {
-        outline: none;
-        border: none;
-        background: rgba(255,255,255,0.4);
-    }
-
-.bar-input-login {
-    padding: 0 2px !important;
-    height: 3px;
-}
-
-.box-btn {
-    padding: 1.5em 2em;
-}
-
-.btn-login {
-    margin: 1em auto;
-    background: #FA0;
-    font-weight: 600;
-    color: black;
-    outline: none;
-}
-
-
-
-    .btn-login:hover {
-        cursor: pointer;
-        color: black;
-        background: #fF0;
-    }
-
-    .btn-login:focus {
-        color: white;
-        background: #fA0;
-    }
-
-    .btn-login:nth-child(2) {
-        background-color: white;
-        color: black;
-    }
-
-        .btn-login:nth-child(2):hover {
-            background-color: rgba(255,255,255,0.5);
-            color: black;
-        }
-
-
-        .btn-login:nth-child(2):focus {
-            background-color: rgba(255,255,255,0.5);
-            color: black;
-        }
-
-
-@media only screen and (max-width: 370px) {
-
-    .btn-login:nth-child(2) {
-        font-size: .4em;
-        text-transform: uppercase;
-    }
-
-        .btn-login:nth-child(2):hover {
-            background-color: rgba(255,255,255,0.5);
-            color: white;
-        }
-
-
-        .btn-login:nth-child(2):focus {
-            background-color: rgba(255,255,255,0.5);
-            color: black;
-        }
-
-    .btn-title-modal {
-        display: flex !important;
-        flex-direction: column !important;
-    }
-}*/

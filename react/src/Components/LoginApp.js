@@ -4,6 +4,9 @@ import $ from 'jquery';
 import '../assets/css/login.css';
 import logo from '../assets/img/logo.png';
 import FacebookLogin from './FacebookLogin';
+import GoogleLogin from './GoogleLogin';
+import InputLogin from './ComponentsCustom/InputLoginCustom'
+
 
 class LoginApp extends Component {
     constructor() {
@@ -41,15 +44,32 @@ class LoginApp extends Component {
             transform: 'translateY(-25px)',
             transition: "all .2s ease-out",
             fontWeight: "900",
+            fontSize: "0.8rem",
             color: 'white',
         });
 
         element.css({
             outline: "none",
-            backgroundColor: 'rgba(0,0,0,0.2)',
-            borderRadius: '25px',
+            //backgroundColor: 'rgba(0,0,0,0.2)',
             color: 'white'
         })
+    }
+
+    validationEmail(e) {
+        var regexValidation = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+        if (regexValidation.test($(e.target).val())
+        ) {
+            $(e.target).css({
+                backgroundColor: "rgba(112,179,34,0.6)",
+                borderRadius: "5px",
+            });
+        } else {
+            $(e.target).css({
+                backgroundColor: "rgba(255,79,34,0.6)",
+                borderRadius: "5px",
+            });
+        }
+
     }
 
     labelDown(e) {
@@ -61,6 +81,7 @@ class LoginApp extends Component {
                 transition: "all .2s ease-out",
                 opacity: "0.87",
                 fontWeight: "400",
+                fontSize: "1rem",
                 color: "black",
             });
 
@@ -85,9 +106,11 @@ class LoginApp extends Component {
                 <form action="#" id="formLogin" className="login-form" noValidate>
                     <section className="container d-flex flex-column justify-content-around align-items-center">
 
+                        {/*<InputLogin onClick={this.labelUp("input")} htmlFor="email" id="labelLogin"  />)*/}
+
                         <div className="box-input d-flex flex-column align-items-center">
                             <label id="labelLogin" onClick={this.labelUp("input")} htmlFor="email">Email</label>
-                            <input type="email" name="email" className="col-12" id="email" onFocus={this.labelUp} onBlur={this.labelDown} />
+                            <input type="email" onKeyUp={this.validationEmail} name="email" className="col-12" id="email" onFocus={this.labelUp} onBlur={this.labelDown} />
                             <div className="bar-input-login col-md-5 d-flex justify-content-start">
                                 <span id="barEmail"></span>
                             </div>
@@ -101,24 +124,24 @@ class LoginApp extends Component {
                             </div>
                         </div>
 
-                        <div className="box-btn d-flex flex-justify-content-center col-9 align-items-center flex-column">
-                            <button type="submit" className="col-6 btn btn-login shine " >Entrar</button>
+                        <div className="box-btn d-flex flex-justify-content-around col-9  flex-column">
+                            <button type="submit" className="col-12 btn btn-login shine " >Entrar</button>
+                            <br/>
                             <FacebookLogin/>
+                            <br />
+                            <GoogleLogin/>
                         </div>
-
-                        <section className="container nav-bottom-login d-flex justify-content-around ">
-                            <div>
-                                <label>Inscrever-se</label>
-                            </div>
-
-                            <div>
-                                <label>Redefinir Senha</label>
-                            </div>
-                        </section>
-
-
                     </section>
                 </form>
+                <div className=" nav-bottom-login d-flex justify-content-around ">
+                    <div>
+                        <label>Inscrever-se</label>
+                    </div>
+
+                    <div>
+                        <label>Redefinir Senha</label>
+                    </div>
+                </div>
             </div>
         );
     }
