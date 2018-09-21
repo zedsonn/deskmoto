@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import LoginApp from './Components/LoginApp';
+import './assets/css/bootstrap.min.css';
+import './assets/css/login.css';
 
 class App extends Component {
 
