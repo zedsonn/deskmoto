@@ -2,7 +2,7 @@
   "name": "deskmoto",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://wendelsagrilo.github.io/deskmoto",
+  "homepage": "https://wendelsagrilo.github.io/deskmoto",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "ajv": "^6.5.3",
@@ -22,6 +22,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "gh-pages-deploy": "^0.5.0"
+    "gh-pages-deploy": "^0.5.0",
+    "eslint": "^3.13.1",
+    "eslint-plugin-react": "^6.9.0"
   }
 }
