@@ -2,7 +2,7 @@
   "name": "deskmoto",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://wendelsagrilo.github.io/gh-pages",
+  "homepage": "http://wendelsagrilo.github.io/react",
   "dependencies": {
     "ajv": "^6.5.3",
     "jquery": "^3.3.1",
