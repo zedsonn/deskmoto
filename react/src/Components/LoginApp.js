@@ -59,11 +59,11 @@ export default class LoginApp extends Component {
                 </form>
                 <div className=" nav-bottom-login d-flex justify-content-around ">
                     <div>
-                        <label id="registrar" class="lbl-footer">Inscrever-se</label>
+                        <label id="registrar" className="lbl-footer">Inscrever-se</label>
                     </div>
 
                     <div>
-                        <label class="lbl-footer">Redefinir Senha</label>
+                        <label className="lbl-footer">Redefinir Senha</label>
                     </div>
                 </div>
             </div>
