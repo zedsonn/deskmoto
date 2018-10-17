@@ -1,17 +1,19 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
-    "\\assets\\bootstrap4.0",
-    "\\assets\\bootstrap4.0\\css",
     "\\react",
-    "\\react\\public",
-    "\\react\\src",
-    "\\react\\src\\assets",
-    "\\react\\src\\assets\\css",
-    "\\react\\src\\Components",
-    "\\react\\src\\Components\\ComponentsCustom"
+    "\\react\\node_modules",
+    "\\react\\node_modules\\caniuse-db",
+    "\\react\\node_modules\\caniuse-db\\features-json",
+    "\\react\\node_modules\\caniuse-lite",
+    "\\react\\node_modules\\caniuse-lite\\data",
+    "\\react\\node_modules\\caniuse-lite\\data\\features",
+    "\\react\\node_modules\\cssstyle",
+    "\\react\\node_modules\\cssstyle\\lib",
+    "\\react\\node_modules\\cssstyle\\lib\\properties",
+    "\\react\\node_modules\\des.js",
+    "\\react\\node_modules\\ip",
+    "\\react\\node_modules\\select-hose"
   ],
-  "SelectedNode": "\\react\\src\\assets\\css\\login.css",
   "PreviewInSolutionExplorer": false
 }
