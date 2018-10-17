@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\assets",
+    "\\assets\\bootstrap4.0",
+    "\\assets\\bootstrap4.0\\css",
+    "\\react",
+    "\\react\\public",
+    "\\react\\src",
+    "\\react\\src\\assets",
+    "\\react\\src\\assets\\css",
+    "\\react\\src\\Components",
+    "\\react\\src\\Components\\ComponentsCustom"
+  ],
+  "SelectedNode": "\\react\\src\\assets\\css\\login.css",
+  "PreviewInSolutionExplorer": false
+}
