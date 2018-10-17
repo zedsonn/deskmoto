@@ -2,7 +2,7 @@
   "name": "deskmoto",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wendelsagrilo.github.io/",
+  "homepage": "http://wendelsagrilo.github.io/gh-pages",
   "dependencies": {
     "ajv": "^6.5.3",
     "jquery": "^3.3.1",
@@ -17,7 +17,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "master -d build",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages-deploy": "^0.5.0"
   }
 }
