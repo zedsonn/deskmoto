@@ -4,9 +4,10 @@
   "private": true,
   "homepage": "https://wendelsagrilo.github.io/deskmoto",
   "dependencies": {
-    "gh-pages": "^1.0.0",
     "ajv": "^6.5.3",
+    "gh-pages": "^1.0.0",
     "jquery": "^3.3.1",
+    "pg": "^7.6.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-facebook-login": "^4.1.0",
