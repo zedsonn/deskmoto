@@ -70,6 +70,7 @@ export default class LoginApp extends Component {
         );
     }
 }
+
 function enabledBtn(element) {
     var emailValid = validationValues($("#emailLogin"));
     var passwordValid = validationValues($("#senhaLogin"));
