@@ -189,13 +189,15 @@ body {
 }
 
 
-.lbl-footer {
+.link {
     color: black;
     font-weight: 500;
 }
 
-    .lbl-footer:hover {
+    .link:hover {
+        color: black !important;
         cursor: pointer;
+        text-decoration: none !important;
         font-weight: 900;
     }
 

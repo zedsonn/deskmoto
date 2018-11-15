@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\react",
+    "\\react\\public",
+    "\\react\\src",
+    "\\react\\src\\assets\\css",
+    "\\react\\src\\assets\\img",
+    "\\react\\src\\Components\\ComponentsCustom",
+    "\\react\\src\\Views"
   ],
+  "SelectedNode": "\\react\\src\\index.js",
   "PreviewInSolutionExplorer": false
 }
