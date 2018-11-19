@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cf57018b-df36-41ec-976a-8b531da11fba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/react/server/Routes/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/server/express.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/wendelsagrilo.github.io/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/wendelsagrilo.github.io/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/lib/read.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/lib/read.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/lib/types/json.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/lib/types/json.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/lib/types/raw.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/lib/types/raw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/lib/types/text.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/lib/types/text.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/lib/types/urlencoded.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/lib/types/urlencoded.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/Changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/dbcs-codec.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/dbcs-codec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/dbcs-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/dbcs-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-codec.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-codec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data-generated.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data-generated.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/big5-added.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/big5-added.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp936.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp936.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp949.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp949.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp950.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp950.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/eucjp.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/eucjp.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gbk-added.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gbk-added.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/shiftjis.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/shiftjis.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/utf16.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/utf16.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/utf7.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/encodings/utf7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/lib/bom-handling.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/lib/bom-handling.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/lib/extend-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/lib/extend-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/lib/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/lib/streams.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/lib/streams.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/iconv-lite/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/dist/qs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/lib/formats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/lib/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/lib/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/test/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/test/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/test/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/test/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/node_modules/qs/test/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/body-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/body-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/lib/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/lib/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/lib/express.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/lib/express.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/lib/middleware/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/lib/middleware/init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/lib/middleware/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/lib/middleware/query.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/lib/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/lib/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/lib/response.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/lib/response.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/lib/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/lib/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/lib/router/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/lib/router/layer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/lib/router/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/lib/router/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/lib/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/lib/view.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/lib/view.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/dist/qs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/lib/formats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/lib/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/lib/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/test/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/test/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/test/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/test/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/qs/test/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/safe-buffer/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/safe-buffer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/safe-buffer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/safe-buffer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/safe-buffer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/node_modules/safe-buffer/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/express/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/express/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/depd/History.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/depd/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/depd/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/depd/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/depd/lib/browser/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/depd/lib/compat/callsite-tostring.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/depd/lib/compat/event-listener-count.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/depd/lib/compat/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/depd/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/http-errors/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/http-errors/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/http-errors/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/http-errors/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/http-errors/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/Changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/dbcs-codec.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/dbcs-codec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/dbcs-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/dbcs-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-codec.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-codec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-data-generated.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-data-generated.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/big5-added.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/big5-added.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp936.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp936.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp949.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp949.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp950.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp950.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/eucjp.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/eucjp.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/gbk-added.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/gbk-added.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/shiftjis.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/shiftjis.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/utf16.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/utf16.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/utf7.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/encodings/utf7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/lib/bom-handling.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/lib/bom-handling.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/lib/extend-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/lib/extend-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/lib/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/lib/streams.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/lib/streams.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/iconv-lite/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/setprototypeof/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/setprototypeof/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/setprototypeof/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/node_modules/setprototypeof/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/node_modules/raw-body/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/node_modules/raw-body/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/react/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/src/Views/LoginApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/src/Views/LoginApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/src/Views/cadastroLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/src/Views/cadastroLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/src/Views/redefinirSenha.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/src/Views/redefinirSenha.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1156739838">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="1" />
+          <entry key="js" value="15" />
+          <entry key="json" value="3" />
+          <entry key="ts" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="15" />
+          <entry key="TypeScript" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="55" />
+          <entry key="js" value="2452" />
+          <entry key="json" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="55" />
+          <entry key="JSON" value="26" />
+          <entry key="JavaScript" value="2452" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/react/server/Routes/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/server/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/server/express.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/src/Views/LoginApp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="14" column="77" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>server</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>app</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/react/src/Views/cadastroLogin.js" />
+        <option value="$PROJECT_DIR$/react/src/DAO/conexaoDB.js" />
+        <option value="$PROJECT_DIR$/react/public/index.html" />
+        <option value="$PROJECT_DIR$/react/src/DAO/Express.js" />
+        <option value="$PROJECT_DIR$/react/src/DAO/conectdb.js" />
+        <option value="$PROJECT_DIR$/react/backend/DAO/config/express.js" />
+        <option value="$PROJECT_DIR$/react/backend/DAO/conectdb.js" />
+        <option value="$PROJECT_DIR$/react/backend/DAO/Express.js" />
+        <option value="$PROJECT_DIR$/react/src/App.js" />
+        <option value="$PROJECT_DIR$/react/backend/Routes/routes.js" />
+        <option value="$PROJECT_DIR$/react/src/index.js" />
+        <option value="$PROJECT_DIR$/react/src/Views/LoginApp.js" />
+        <option value="$PROJECT_DIR$/react/server/Routes/index.js" />
+        <option value="$PROJECT_DIR$/react/server/index.js" />
+        <option value="$PROJECT_DIR$/react/package.json" />
+        <option value="$PROJECT_DIR$/react/server/express.js" />
+        <option value="$PROJECT_DIR$/react/server/Routes/routes.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/react/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/react/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="wendelsagrilo.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wendelsagrilo.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wendelsagrilo.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wendelsagrilo.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wendelsagrilo.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wendelsagrilo.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wendelsagrilo.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wendelsagrilo.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="Routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/react/src/index.js" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.2.6\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Wende\source\Projetos\wendelsagrilo.github.io\react\server" />
+      <recent name="C:\Users\Wende\source\Projetos\wendelsagrilo.github.io\react\backend" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:3000" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="routes.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/react/src/index.js" working-dir="$PROJECT_DIR$/react/server/Routes">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.routes.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf57018b-df36-41ec-976a-8b531da11fba" name="Default Changelist" comment="" />
+      <created>1542484022225</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542484022225</updated>
+      <workItem from="1542484028326" duration="1279000" />
+      <workItem from="1542485583920" duration="10518000" />
+      <workItem from="1542562409110" duration="14060000" />
+    </task>
+    <servers>
+      <GitHub url="https://github.com/wendelsagrilo">
+        <option name="repoAuthor" value="deskmoto" />
+      </GitHub>
+    </servers>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="25857000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24330357" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="9" />
+      <window_info anchor="bottom" id="REST Client" order="10" weight="0.5704698" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" side_tool="true" visible="true" weight="0.40771812" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.32980332" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24330357" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="9" />
+      <window_info anchor="bottom" id="REST Client" order="10" weight="0.5704698" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.40268457" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.32980332" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/react/node_modules/@types/react/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="301" column="8" selection-start-line="301" selection-start-column="8" selection-end-line="301" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/src/DAO/conexaoDB.js" />
+    <entry file="file://$PROJECT_DIR$/react/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/src/Views/cadastroLogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/backend/DAO/config/express.js" />
+    <entry file="file://$PROJECT_DIR$/react/backend/DAO/conectdb.js" />
+    <entry file="file://$PROJECT_DIR$/react/backend/DAO/Express.js" />
+    <entry file="file://$PROJECT_DIR$/react/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="14" column="77" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/src/Views/LoginApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/server/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/server/Routes/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

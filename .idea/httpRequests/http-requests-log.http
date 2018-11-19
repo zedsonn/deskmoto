@@ -1,0 +1,32 @@
+GET http://localhost:3000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T055700.200.html
+
+###
+
+GET http://localhost:300
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:5432
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:5431
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:5432
+Accept: */*
+Cache-Control: no-cache
+
+###
+
