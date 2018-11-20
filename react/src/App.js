@@ -7,9 +7,7 @@ import './assets/css/login.css';
 class App extends Component {
 
     render() {
-        return (
-            <LoginApp />
-        );
+        return <LoginApp/>;
     }
 }
 

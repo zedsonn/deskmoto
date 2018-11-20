@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import logo from '../assets/img/logo.png';
 import InputCustomValidation from '../Components/ComponentsCustom/InputCustomValidation';
 import { Link } from 'react-router-dom'
@@ -21,7 +20,7 @@ class RedefinirSenha extends Component {
                         <InputCustomValidation id="confirmarSenha" type="password" placeholder="Confirmar Senha" />
 
                         <div className="box-btn d-flex flex-justify-content-around col-9  flex-column">
-                            <a id="loginBtn" href="../../../index.html" className="col-12 btn btn-login shine" >Redefinir Senha</a>
+                            <a id="loginBtn" href="/" className="col-12 btn btn-login shine" >Redefinir Senha</a>
                         </div>
                     </section>
                 </form>

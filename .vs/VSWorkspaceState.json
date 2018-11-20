@@ -2,13 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\react",
-    "\\react\\public",
-    "\\react\\src",
-    "\\react\\src\\assets\\css",
-    "\\react\\src\\assets\\img",
-    "\\react\\src\\Components\\ComponentsCustom",
-    "\\react\\src\\Views"
+    "\\react\\server",
+    "\\react\\server\\Connections",
+    "\\react\\server\\Routes",
+    "\\react\\src"
   ],
-  "SelectedNode": "\\react\\src\\index.js",
+  "SelectedNode": "\\react\\server\\Connections\\connectionDB.js",
   "PreviewInSolutionExplorer": false
 }
