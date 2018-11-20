@@ -19,10 +19,10 @@ export default class LoginApp extends Component {
 
     componentDidMount() {
         $.ajax({
-                url: "http://localhost:3000/api/dados",
-                type: 'get',
-                contentType: "application/json; charset=utf-8",
-            }
+            url: "http://localhost:4000/dados",
+            type: 'get',
+            contentType: "application/json; charset=utf-8",
+        }
         ).done(function (result) {
             console.log(result);
         }).fail(error => (error))

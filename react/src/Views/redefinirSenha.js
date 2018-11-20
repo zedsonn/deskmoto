@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import logo from '../assets/img/logo.png';
 import InputCustomValidation from '../Components/ComponentsCustom/InputCustomValidation';
 import { Link } from 'react-router-dom'

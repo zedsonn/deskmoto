@@ -53,7 +53,7 @@ export default class InputCustomValidation extends React.Component {
 
 export function validationValues(element) {
     element = $(element);
-    if (element.attr('type') == 'email' || element.attr('type') == 'Email') {
+    if (element.attr('type') === 'email' || element.attr('type') === 'Email') {
         var regexValidation = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
         if (!regexValidation.test($(element).val()))
@@ -61,7 +61,7 @@ export function validationValues(element) {
         else {
             $(element).removeClass('validationError');
         }
-    } else if (element.attr('type') == 'password' || element.attr('type') == 'Password') {
+    } else if (element.attr('type') === 'password' || element.attr('type') === 'Password') {
         if ($(element).val().length <= 3)
             $(element).addClass('validationError');
         else

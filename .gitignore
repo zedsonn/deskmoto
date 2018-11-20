@@ -1,2 +1,7 @@
 
 .vs/VSWorkspaceState.json
+# dependencies
+/node_modules
+# misc
+.DS_Store
+.env

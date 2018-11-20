@@ -1,34 +1,23 @@
+const dataBase = require('./../Connections/connectionDB')()
 let routes = {};
 let server;
 
 routes.configuraRotas = function (express) {
     server = express;
-    routes.teste();
+    routes.consultaDadosMotoboy();
 };
 
-routes.teste = function ()  {
-    server.route("/api/dados").get((request, response) => response.send("Funcionou"));
+routes.consultaDadosMotoboy = function () {
+        server.get('/dados', async function (request, response) {
+        try{
+           const dados =  await dataBase.any("SELECT * FROM motoboy" )
+            response.json(dados)
+        } catch(ex){
+            console.log("Erro ao efetuar a consulta " + ex)
+        }
+    });
 };
 
 module.exports = routes;
-
-
-//const db = pgp(conection)
-
-//d//b.query("select * from public.Motoboy")
-//    .then(user =>{
-//        console.log()
-//    })
-//    .catch(error => {
-//        console.log("não conectou "  +error )
-//    })
-//
-//const conection = {
-//    host: 'localhost',
-//    port: 5432,
-//    database: 'DeskMoto',
-//    user: 'wendel',
-//    password: '214321'
-//};
 
 
